@@ -14,22 +14,22 @@ This repository documents my progress through the company's training phases, inc
 - [ ] **Phase 2:** Bootstrap 5
 - [ ] **Phase 3:** Git & GitHub
 - [ ] **Phase 4:** JavaScript Fundamentals
-- [ ] **Phase 5:** Frontend Development — React or Angular
-- [ ] **Phase 6:** Backend Development — Node.js
-- [ ] **Phase 7:** Advanced Backend — FastAPI or .NET
+- [ ] **Phase 5:** Frontend Development - React or Angular
+- [ ] **Phase 6:** Backend Development - Node.js
+- [ ] **Phase 7:** Advanced Backend - FastAPI or .NET
 - [ ] **Phase 8:** Docker Fundamentals
-- [ ] **Phase 9:** Final Team Project — BSS Restaurant App
+- [ ] **Phase 9:** Final Team Project - BSS Restaurant App
 
 ## Repository Structure
 
 | Directory or File | Purpose |
 |---|---|
 | `daily-logs/` | Daily progress, Udemy lessons, practice and reflections |
-| `phase-1-web-basics-html-css/` | HTML & CSS practice and tasks |
+| `phase-1-web-basics/` | HTML & CSS practice and tasks |
 | `phase-2-bootstrap/` | Bootstrap learning and tasks |
 | `phase-3-git-github/` | Git & GitHub exercises and tasks |
 | `phase-4-javascript-fundamentals/` | JavaScript notes and tasks |
-| `phase-5-frontend-framework-react-angular/` | React or Angular practice and tasks |
+| `phase-5-frontend-framework/` | React or Angular practice and tasks |
 | `phase-6-backend-basics/` | Node.js backend learning and tasks |
 | `phase-7-backend-advanced/` | FastAPI or .NET learning and tasks |
 | `phase-8-docker/` | Docker learning and tasks |
@@ -44,14 +44,14 @@ This repository documents my progress through the company's training phases, inc
 1. Study the assigned lessons and resources.
 2. Practise the concepts through code.
 3. Complete the assigned tasks and test my work.
-4. Record important concepts, challenges, and solutions.
+4. Record important concepts, challenges and solutions.
 5. Review feedback and improve my implementations.
 
 ## Current Progress
 
-- **Current phase:** Phase 1 — HTML & CSS
-- **Completed:** Task 1.1 — Geometric Precision (Bangladesh Flag)
-- **Current task:** Task 1.2 — Bento Image Gallery
+- **Current phase:** Phase 1 - HTML & CSS
+- **Completed:** Task 1.1 - Geometric Precision (Bangladesh Flag)
+- **Current task:** Task 1.2 - Bento Image Gallery
 - **Status:** Phase 1 in progress
 
 
