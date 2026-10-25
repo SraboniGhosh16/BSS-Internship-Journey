@@ -1,6 +1,6 @@
 # Internship Progress Tracker
 
-This file tracks my progress through the BSS Software Engineering Internship training plan. Tasks will be marked complete after implementation, testing, and any required submission.
+This file tracks my progress through the BSS Software Engineering Internship training plan. Tasks will be marked complete after implementation, testing and any required submission.
 
 **Legend:** `[x]` Completed · `[ ]` Not yet completed
 
@@ -99,5 +99,5 @@ This file tracks my progress through the BSS Software Engineering Internship tra
 
 ## Completion Notes
 
-Use the daily logs and task documentation to record implementation details, challenges, and evidence of completed work.
+Use the daily logs and task documentation to record implementation details, challenges and evidence of completed work.
 
