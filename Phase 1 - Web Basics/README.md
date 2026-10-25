@@ -1,18 +1,31 @@
-# Phase 1 — HTML & CSS
+# Phase 1 - Web Basics (HTML & CSS)
 
 ## Overview
-This phase focuses on HTML structure, semantic markup, CSS fundamentals, positioning, layouts, responsiveness and animations.
 
-## Tasks
-- [ ] Complete assigned HTML and CSS learning resources
-- [x] Task 1.1 - Geometric Precision (Bangladesh Flag)
-- [ ] Task 1.2 - CSS Grid Mastery (Advanced Image Gallery/Bento Image Gallery)
-- [ ] Task 1.3 - Structural Logic (Simple Analog Clock UI)
-- [ ] Task 2.1 - Figma Conversion (Convention Center)
-- [ ] Task 2.2 - Figma Conversion (Restaurant System)
-- [ ] Task 2.3 - Figma Conversion (Furniture E-commerce)
-- [ ] Assessment - Static Personal Portfolio
+This phase focuses on building a foundation in HTML and CSS, from structuring web pages to creating responsive layouts and styling interactive elements.
+
+## Learning Topics
+
+- HTML document structure and semantic elements
+- Forms, tables and accessibility
+- CSS selectors, box model and positioning
+- Flexbox and CSS Grid
+- Responsive web design
+- Animations and other CSS properties
+
+## Tasks and Assignments
+
+| Task | Status |
+|---|---|
+| Task 1.1 - Geometric Precision (Bangladesh Flag) | Completed |
+| Task 1.2 - CSS Grid Mastery (Advanced Image Gallery/Bento Image Gallery) | In progress |
+| Task 1.3 - Structural Logic (Simple Analog Clock UI) | Not started |
+| Task 2.1 - Figma Conversion (Convention Center) | Not started |
+| Task 2.2 - Figma Conversion (Restaurant System) | Not started |
+| Task 2.3 - Figma Conversion (Furniture E-commerce) | Not started |
+| Assessment - Static Personal Portfolio | Not started |
 
 ## Progress
-**Status:** In progress
+
+**Phase status:** In progress  
 **Current task:** Task 1.2 - Bento Image Gallery
