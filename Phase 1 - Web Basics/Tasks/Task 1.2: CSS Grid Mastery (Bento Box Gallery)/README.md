@@ -6,9 +6,11 @@ This task is part of my practical learning journey during the BSS Software Engin
 
 The objective was to create a Bento Box-style image gallery using CSS Grid. I also integrated Lightbox2 to allow users to view the images in an enlarged overlay when clicked.
 
-## Course Information
+## Task Information
 
-- **Assignment:** Task 1.2 - CSS Grid Mastery
+- **Program:** BSS Software Engineering Internship
+- **Phase:** Phase 1 - Web Basics
+- **Task:** Task 1.2 - CSS Grid Mastery
 
 ## Live Demo
 
