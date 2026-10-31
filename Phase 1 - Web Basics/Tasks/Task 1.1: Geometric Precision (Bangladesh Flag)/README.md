@@ -1,46 +1,45 @@
-# Task 1.1 - Geometric Precision: Bangladesh Flag
+# Task 1.1 - Geometric Precision (Bangladesh Flag)
 
-## Objective
+## Overview
 
-Recreate the Bangladesh national flag using HTML and CSS, focusing on positioning and proportions.
+This task was assigned as part of my BSS Software Engineering Internship.
+
+The objective was to recreate the Bangladesh national flag using CSS positioning properties. The flag was designed with a 10:6 aspect ratio, a bottle-green background and a red circle positioned at the center of the rectangle.
+
+## Task Information
+
+- **Program:** BSS Software Engineering Internship
+- **Phase:** Phase 1 - Web Basics
+- **Task:** Task 1.1 - Geometric Precision
 
 ## Live Demo
 
-**[View the Bangladesh Flag](https://bangladeshflag-sraboni.netlify.app)**
+[**View the Project Website**](https://bangladeshflag-sraboni.netlify.app/)
 
-## Technologies
+## Technologies Used
 
 - HTML5
 - CSS3
 
-## Implementation
+## Features
 
-- Created a flag container with a 10:6 aspect ratio.
-- Used a green background for the flag.
-- Created a red circle using CSS.
-- Used `position: relative` on the container and `position: absolute` on the circle.
-- Used `transform: translate(-50%, -50%)` to center the circle.
-- Used responsive sizing to adapt the flag to different screen widths.
+- Bangladesh flag recreated using HTML and CSS.
+- Flag maintains a 10:6 aspect ratio.
+- Red circle positioned at the center of the flag.
+- Responsive flag sizing based on viewport width.
+- Flag centered horizontally and vertically on the page.
 
-## Concepts Learned
+## Concepts Practised
 
-- HTML document structure
-- CSS selectors and declarations
-- `position: relative` and `position: absolute`
-- `aspect-ratio`
-- `border-radius`
-- `transform: translate()`
-- Responsive sizing
+- CSS positioning (`position: relative` and `position: absolute`).
+- Flexbox alignment (`justify-content` and `align-items`).
+- CSS transforms (`translate()`).
+- Aspect ratio (`aspect-ratio`).
+- Percentage-based dimensions.
+- CSS `min()` function.
+- CSS border radius (`border-radius: 50%`).
+- Box sizing (`box-sizing: border-box`).
 
-## Testing
+## Implementation Notes
 
-- [x] Checked the flag in the browser
-- [x] Checked the layout at different screen widths
-- [x] Confirmed the circle is centered
-
-## Files
-
-- `index.html` - HTML structure
-- `style.css` - Flag styling
-
-
+The flag container uses `position: relative` to establish the positioning reference for the red circle. The circle uses `position: absolute`, with `top: 50%` and `left: 50%`, followed by `transform: translate(-50%, -50%)` to align it precisely at the center. The flag maintains its 10:6 aspect ratio, while the `min()` function limits its width to 600px or 90% of the viewport width, whichever is smaller. Flexbox is used to center the flag within the page.
