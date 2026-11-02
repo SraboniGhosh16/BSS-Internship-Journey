@@ -50,8 +50,12 @@ This repository documents my progress through the company's training phases, inc
 ## Current Progress
 
 - **Current phase:** Phase 1 - HTML & CSS
-- **Completed:** Task 1.1 - Geometric Precision (Bangladesh Flag)
-- **Current task:** Task 1.2 - Bento Image Gallery
+- **Modules Completed:** 1-18 (Total 21 Modules)
+- **Current Module:** 19
+- **Assignments Completed:** 1-19 (Total 20 Assignments)
+- **Current Assignment:** 20
+- **Tasks Completed:** Task 1.1 - Geometric Precision (Bangladesh Flag), Task 1.2 - Bento Image Gallery and Task 1.3 - Simple Clock UI. (Total 6 Tasks)
+- **Current Task:** Task 2.1 - Figma Conversion (Convention Center)
 - **Status:** Phase 1 in progress
 
 
