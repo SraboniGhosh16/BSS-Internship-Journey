@@ -4,7 +4,7 @@
 
 This task was assigned as part of my BSS Software Engineering Internship.
 
-The objective was to recreate the Bangladesh national flag using CSS positioning properties. The flag was designed with a 10:6 aspect ratio, a bottle-green background and a red circle positioned at the center of the rectangle.
+The objective was to recreate the Bangladesh national flag using HTML and CSS, following its prescribed proportions and geometric positioning. The flag maintains a 10:6 aspect ratio, with a circular red disc positioned at 45% of the flag's length and vertically centred.
 
 ## Task Information
 
@@ -23,11 +23,12 @@ The objective was to recreate the Bangladesh national flag using CSS positioning
 
 ## Features
 
-- Bangladesh flag recreated using HTML and CSS.
-- Flag maintains a 10:6 aspect ratio.
-- Red circle positioned at the center of the flag.
-- Responsive flag sizing based on viewport width.
-- Flag centered horizontally and vertically on the page.
+- Bangladesh national flag recreated using HTML and CSS.
+- Flag maintains the prescribed 10:6 aspect ratio.
+- Red circle positioned at 45% horizontally and 50% vertically.
+- Circle diameter maintained at 40% of the flag's width.
+- Responsive flag sizing with a maximum width of 800px.
+- Flag centred horizontally and vertically on the page.
 
 ## Concepts Practised
 
@@ -35,11 +36,11 @@ The objective was to recreate the Bangladesh national flag using CSS positioning
 - Flexbox alignment (`justify-content` and `align-items`).
 - CSS transforms (`translate()`).
 - Aspect ratio (`aspect-ratio`).
-- Percentage-based dimensions.
-- CSS `min()` function.
+- Percentage-based dimensions and positioning.
+- CSS `max-width`.
 - CSS border radius (`border-radius: 50%`).
 - Box sizing (`box-sizing: border-box`).
 
 ## Implementation Notes
 
-The flag container uses `position: relative` to establish the positioning reference for the red circle. The circle uses `position: absolute`, with `top: 50%` and `left: 50%`, followed by `transform: translate(-50%, -50%)` to align it precisely at the center. The flag maintains its 10:6 aspect ratio, while the `min()` function limits its width to 600px or 90% of the viewport width, whichever is smaller. Flexbox is used to center the flag within the page.
+The flag container uses a 10:6 aspect ratio and a maximum width of 800px to maintain its proportions across different screen sizes. The red circle is positioned absolutely within the flag container, using `top: 50%` and `left: 45%`. The `transform: translate(-50%, -50%)` property shifts the circle by half its own dimensions to align its centre with the specified coordinates. Flexbox is used to centre the flag on the page.
