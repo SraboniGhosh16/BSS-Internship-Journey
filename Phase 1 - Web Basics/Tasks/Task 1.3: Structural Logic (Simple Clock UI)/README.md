@@ -4,7 +4,7 @@
 
 This task was assigned as part of my BSS Software Engineering Internship.
 
-The objective was to create a simple analog clock interface to practise the CSS coordinate system, stacking contexts and rotation points. The clock includes three animated hands of different lengths and thicknesses, positioned around a shared central pivot point.
+The objective was to create a simple animated clock interface to practise CSS positioning, rotation points, and keyframe animations. The clock features a circular face with two animated hands of different lengths and colours, rotating around a shared reference point.
 
 ## Task Information
 
@@ -14,7 +14,7 @@ The objective was to create a simple analog clock interface to practise the CSS 
 
 ## Live Demo
 
-[**View the Project Website**](https://simpleclockui.netlify.app/)
+[**View the Project Website**](https://simple-clock-ui.vercel.app/)
 
 ## Technologies Used
 
@@ -24,26 +24,25 @@ The objective was to create a simple analog clock interface to practise the CSS 
 ## Features
 
 - Circular clock face with a distinct border.
-- Three animated clock hands with different lengths and thicknesses.
-- Continuous rotation using CSS animations.
-- Shared central pivot point for all three hands.
-- Centre point layered above the clock hands.
-- Responsive clock sizing.
-- Footer disclaimer explaining that the clock is an animation demonstration rather than a functional timekeeping clock.
+- Two animated hands with different lengths and colours.
+- Continuous rotation using CSS keyframe animations.
+- Shared positioning reference for both clock hands.
+- Different animation durations for the two hands.
+- Responsive clock sizing with a maximum width of 400px.
 
 ## Concepts Practised
 
-- CSS positioning (`relative` and `absolute`).
+- CSS positioning (`position: relative` and `position: absolute`).
 - CSS coordinate system and percentage-based positioning.
-- CSS transforms (`rotate()` and `translate()`).
+- CSS transforms (`rotate()`).
 - Transform origin (`transform-origin`).
 - CSS animations using `@keyframes`.
-- Animation duration, timing function and iteration count.
-- Stacking order using `z-index`.
-- Flexbox layout.
+- Animation duration and timing functions.
+- Infinite animation iteration.
+- Flexbox alignment.
 - Aspect ratio and responsive sizing.
-- CSS pseudo-classes (`:first-child` and `:last-child`).
+- CSS `min()` function.
 
 ## Implementation Notes
 
-The clock uses a relatively positioned container as the reference for its absolutely positioned hands. Each hand is aligned at the centre of the clock and uses `transform-origin: bottom center` to rotate around its bottom end. CSS keyframe animations provide continuous rotation, with different durations assigned to each hand. The animation speeds are intentionally different from standard clock timing, so the project does not display real time or synchronised hour, minute and second values.
+The clock uses a relatively positioned container as the reference for its absolutely positioned hands. Both hands are positioned at the horizontal centre and extend upwards from the bottom-centre reference point. The `transform-origin: bottom center` property ensures that they rotate around their bottom ends. A shared `@keyframes` animation controls their rotation, while different animation durations create different rotation speeds. The clock is an animation demonstration rather than a functional timekeeping clock.
