@@ -1,10 +1,10 @@
-# Assignment 17 - Hamburger Menu with Rotating 3D Cube
+# Assignment 17 - Hamburger Menu
 
 ## Overview
 
 This assignment is part of my learning journey through *Modern HTML & CSS From The Beginning 2.0* during the BSS Software Engineering Internship.
 
-The objective was to create a responsive navigation menu with a hamburger toggle for smaller screens. I extended the project by adding a rotating 3D cube, applying the CSS 3D transformation concepts covered in Module 16.
+The objective was to create a responsive navigation menu with a hamburger toggle for smaller screens. The navigation menu displays regular links on desktop screens and a slide-in menu on smaller screens.
 
 ## Course Information
 
@@ -14,7 +14,7 @@ The objective was to create a responsive navigation menu with a hamburger toggle
 
 ## Live Demo
 
-[**View the Project Website**](https://hamburger-menu-cube.vercel.app/)
+[**View the Project Website**](https://hamburger--menu.vercel.app/)
 
 ## Technologies Used
 
@@ -27,25 +27,26 @@ The objective was to create a responsive navigation menu with a hamburger toggle
 ## Features
 
 - Responsive navigation bar.
-- Desktop navigation menu.
-- Hamburger menu for smaller screens.
+- Desktop navigation menu with links.
+- Hamburger menu toggle for smaller screens.
 - Slide-in mobile navigation menu.
-- Animated 3D cube with six faces.
-- Continuous cube rotation.
-- Cube visibility toggles when the mobile menu is opened or closed.
+- Smooth CSS transition when opening and closing the mobile menu.
+- Hover effect on navigation links.
 
 ## Concepts Practised
 
 - CSS Flexbox.
 - CSS positioning.
 - CSS transitions and transforms.
-- CSS 3D transformations (`perspective` and `transform-style: preserve-3d`).
-- CSS animations using `@keyframes`.
 - CSS media queries.
+- Responsive navigation design.
 - JavaScript DOM selection.
-- Event listeners and `classList.toggle()`.
-- Synchronising UI behaviour using JavaScript class toggling.
+- Event listeners.
+- `classList.toggle()` for managing CSS classes.
+- Controlling menu visibility through JavaScript and CSS.
 
 ## Implementation Notes
 
-The navigation menu uses CSS transforms and transitions to slide into view on smaller screens. JavaScript toggles the `active` class when the hamburger button is clicked. The 3D cube is created using six individual faces positioned with CSS 3D transformations and continuously rotated using `@keyframes`. An additional JavaScript interaction hides the cube while the mobile navigation menu is active.
+The navigation bar uses CSS Flexbox to align the logo and navigation links. CSS media queries hide the desktop navigation menu and display the hamburger menu on screens with a maximum width of 768px.
+
+The mobile navigation menu is initially positioned outside the viewport using `transform: translateX(100%)`. When the hamburger icon is clicked, JavaScript toggles the `active` class on the mobile menu. This changes its transform value to `translateX(0)`, allowing the menu to slide into view with a smooth CSS transition.
