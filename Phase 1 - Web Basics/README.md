@@ -18,14 +18,13 @@ This phase focuses on building a foundation in HTML and CSS, from structuring we
 | Task | Status |
 |---|---|
 | Task 1.1 - Geometric Precision (Bangladesh Flag) | Completed |
-| Task 1.2 - CSS Grid Mastery (Advanced Image Gallery/Bento Image Gallery) | In progress |
-| Task 1.3 - Structural Logic (Simple Analog Clock UI) | Not started |
-| Task 2.1 - Figma Conversion (Convention Center) | Not started |
-| Task 2.2 - Figma Conversion (Restaurant System) | Not started |
-| Task 2.3 - Figma Conversion (Furniture E-commerce) | Not started |
-| Assessment - Static Personal Portfolio | Not started |
+| Task 1.2 - CSS Grid Mastery (Advanced Image Gallery/Bento Image Gallery) | Completed |
+| Task 1.3 - Structural Logic (Simple Analog Clock UI) | Completed |
+| Task 2.1 - Figma Conversion (Convention Center) | Completed |
+| Task 2.2 - Figma Conversion (Restaurant System) | Completed |
+| Task 2.3 - Figma Conversion (Furniture E-commerce) | Not Assigned |
+| Assessment - Static Personal Portfolio | Completed |
 
 ## Progress
 
-**Phase status:** In progress  
-**Current task:** Task 1.2 - Bento Image Gallery
+**Phase status:** Completed
