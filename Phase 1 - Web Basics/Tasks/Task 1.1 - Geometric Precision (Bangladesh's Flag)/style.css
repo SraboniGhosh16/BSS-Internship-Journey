@@ -1,0 +1,48 @@
+/* Reset default browser spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* position the container div in the center */
+body {
+  height: 100vh; /* makes it responsive */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* this div contains the flag (flag rectangle) */
+.flag-container {
+  width: 100%;
+  max-width: 800px;
+  /* height is adjusted in respect to the width size */
+  /* the width and height ratio of Bangladesh's Flag is 10:6 */
+  aspect-ratio: 10/6;
+  background-color: #008000;
+  position: relative;
+}
+
+/* this div contains the inner part of the flag */
+.red-circle {
+  position: absolute;
+  /* the diameter of the circle of Bangladesh's Flag is 4 */
+  width: 40%;
+  /* making this container a circle */
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #ff0000;
+
+  /* position of the inner circle.
+  the circle is positioned at center from top and 4.5 to the left.
+  measurements from: https://pngtree.com/freepng/bangladesh-national-flag-measurement_6226073.html */
+  top: 50%;
+  left: 45%;
+
+  /* the top and left properties move the corner of the circle's container
+  w.r.t. the rectangle's container.
+  transform property moves the circle w.r.t. it's own container. */
+  transform: translate(-50%, -50%);
+}
