@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Restaurant</title>
+</head>
+<body>
+    <navbar class="navbar">
+        <div class="navbar__container container">
+            <div class="navbar__logo">
+                <img src="images/logo.svg" alt="logo" class="navbar__logo-img">
+                <h2 class="navbar__logo-text"><span class="navbar__logo-text-bold">Restau</span>rant</h2>
+            </div>
+            <div class="navbar__content">
+                <ul class="navbar__content-list">
+                    <li><a href="#" class="navbar__content-item">Home</a></li>
+                    <li><a href="#about" class="navbar__content-item">About</a></li>
+                    <li><a href="#menu" class="navbar__content-item">Portfolio</a></li>
+                    <li><a href="#clients" class="navbar__content-item">Clients</a></li>
+                    <li><a href="#blog" class="navbar__content-item">Blog</a></li>
+                    <li><a href="#contact" class="navbar__content-item">Contact</a></li>
+                </ul>
+                <a href="#contact" class="navbar__content-button btn">Book a table</a>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="navbar__mobile-menu">
+                <div class="mobile-menu-button">
+                    <i class="fas fa-bars fa-2x"></i>
+                </div>
+                <div class="navbar__mobile-menu-content">
+                    <ul class="navbar__mobile-menu-list">
+                        <li><a href="#" class="navbar__mobile-menu-item">Home</a></li>
+                        <li><a href="#about" class="navbar__mobile-menu-item">About</a></li>
+                        <li><a href="#menu" class="navbar__mobile-menu-item">Portfolio</a></li>
+                        <li><a href="#clients" class="navbar__mobile-menu-item">Clients</a></li>
+                        <li><a href="#blog" class="navbar__mobile-menu-item">Blog</a></li>
+                        <li><a href="#contact" class="navbar__mobile-menu-item">Contact</a></li>
+                    </ul>
+                    <a href="#contact" class="navbar__mobile-menu-button btn">Book a table</a>
+                </div>
+            </div>
+        </div>
+    </navbar>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home__container container">
+            <div class="home__content">
+                <h2 class="home__content-title">Taste the authentic Saudi cuisine</h2>
+                <p class="home__content-description">Among the best Saudi chefs in the world, serving you something beyond flavor.</p>
+                <a href="#menu" class="home__content-button btn">Explore menu</a>
+            </div>
+            <div class="home__image">
+                <img src="images/hero-image.png" alt="Home Image">
+                <img src="images/hero-sign.svg" class="home__image-sign" alt="Home Sign">
+                <div class="home__image-offer">
+                    <p>Today Offer</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <img src="images/hero-sign.svg" class="home__image-sign" alt="Home Sign">
+        <div class="home__image-offer">
+            <p>Today Offer</p>
+        </div> -->
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <img src="images/side-image-1.png" alt="side image">
+        <div class="about__container container">
+            <!-- content 1 (image and tabs) -->
+            <div class="about__content1">
+                <div class="about__content-image">
+                    <div class="about__content-image-market">
+                        <h2 class="about__content-image-number">50+</h2>
+                        <p class="about__content-image-text">Market Experiences</p>
+                    </div>
+                </div>
+                <div class="about__content-tab">
+                    <div class="about__content-tab-buttons">
+                        <button class="tab-btn active" data-tab="1">About</button>
+                        <button class="tab-btn" data-tab="2">Experience</button>
+                        <button class="tab-btn" data-tab="3">Contact</button>
+                    </div>
+                    <div class="about__content-tab-data">
+                        <div class="about__content-tab-data-about" id="1">
+                            <h2>Exceptional culinary experience and delicious food</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est cursus. Vel hac convallis ipsum, facilisi odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna minim veniam nostrud exercitation.</p>
+                        </div>
+                        <div class="about__content-tab-data-experience" id="2">
+                            <h2>Lorem ipsum dolor sit amet.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt enim nihil ducimus delectus vero ullam exercitationem earum omnis! Cumque fuga sunt eveniet expedita pariatur?</p>
+                        </div>
+                        <div class="about__content-tab-data-contact" id="3">
+                            <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, beatae. Ullam nam excepturi veritatis quidem deleniti, nihil magni illum, repellendus neque temporibus doloribus voluptates itaque ratione quae ad aut ipsa.</p>
+                        </div>
+                    </div>
+                    <div class="about__content-tab-end">
+                        <div class="about__content-tab-end-1">
+                            <a href="#about" class="about__end-1 btn">About More</a>
+                        </div>
+                        <div class="about__content-tab-end-2">
+                            <img src="images/call.svg" alt="call">
+                            <a href="tel:+88 3426 739 485" class="about__end-2">+88 3426 739 485</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content 2 (info) -->
+            <div class="about__content2">
+                <div class="about__info">
+                    <div class="about__info-delivery">
+                        <div class="about__info-delivery-icon">
+                            <img src="images/package.svg" alt="package">
+                        </div>
+                        <div class="about__info-delivery-text">
+                            <h2>fast delivery</h2>
+                            <p>Within 30 minutes</p>
+                        </div>
+                    </div>
+                    <div class="about__info-dining">
+                        <div class="about__info-dining-icon">
+                            <img src="images/medal.svg" alt="medal">
+                        </div>
+                        <div class="about__info-dining-text">
+                            <h2>absolute dining</h2>
+                            <p>Best buffet restaurant</p>
+                        </div>
+                    </div>
+                    <div class="about__info-pickup">
+                        <div class="about__info-pickup-icon">
+                            <img src="images/bag.svg" alt="bag">
+                        </div>
+                        <div class="about__info-pickup-text">
+                            <h2>pickup delivery</h2>
+                            <p>Grab your food order</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Menu/ Portfolio -->
+    <section class="menu" id="menu">
+        <img src="images/side-image-1.png" alt="side image">
+        <div class="menu__container container">
+            <div class="menu__heading">
+                <p class="heading__p-red"><i class="fa-solid fa-square"></i> Crispy, Every Bite Taste</p>
+                <h2 class="heading">POPULAR FOOD ITEMS</h2>
+            </div>
+            <div class="menu__items">
+                <div class="menu__item">
+                    <img src="images/burger.jpg" alt="Burger">
+                    <div class="image-border"></div>
+                    <h2>vegetables burger</h2>
+                    <p>Barbecue Italian cuisine pizza</p>
+                </div>
+                <div class="menu__item">
+                    <img src="images/pizza.png" alt="Pizza">
+                    <div class="image-border"></div>
+                    <h2>Spacial Pizza</h2>
+                    <p>Barbecue Italian cuisine pizza</p>
+                </div>
+                <div class="menu__item">
+                    <img src="images/fries.jpg" alt="Fries">
+                    <div class="image-border"></div>
+                    <h2>Spacial French fries</h2>
+                    <p>Barbecue Italian cuisine</p>
+                </div>
+                <div class="menu__item">
+                    <img src="images/chicken.jpg" alt="Chicken">
+                    <div class="image-border"></div>
+                    <h2>Cuisine Chicken</h2>
+                    <p>Japanese Cuisine Chicken</p>
+                </div>
+            </div>
+            <div class="menu__buttons">
+                <button class="menu__button-left round-button"><i class="fas fa-chevron-left"></i></button>
+                <button class="menu__button-right round-button"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="contact__container container">
+            <p class="heading__p-red">
+                <i class="fa-solid fa-square"></i> Book Now
+            </p>
+            <h2 class="heading">Book Your Table</h2>
+            <p class="contact__description">
+                Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo molestie vel, ornare non id blandit netus.
+            </p>
+            <form action="https://formspree.io/f/xzeeqkbk" method="POST">
+                <input type="name" name="name" placeholder="Your Name *" required>
+                <input type="email" name="email" placeholder="Your Email">
+                <input type="text" name="date" placeholder="Reservation Date" onfocus="(this.type='date')" onblur="(this.type='text')">
+                <input type="number" name="people" min="1" max="10" placeholder="Total People">
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+                <button class="btn" type="submit">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Clients -->
+    <section class="clients" id="clients">
+        <img src="images/side-image-2.png" alt="side image 3" class="left-side-image">
+        <img src="images/side-image-3.png" alt="side image 4" class="right-side-image">
+        <div class="client__container container">
+            <div class="client__heading">
+                <p class="heading__p-red"><i class="fa-solid fa-square"></i> Crispy, Every Bite Taste</p>
+                <h2 class="heading">What Some of my Customers Say</h2>
+            </div>
+            <div class="client__reviews">
+                <div class="client__review">
+                    <div class="client__review-image">
+                        <img src="images/video-image.png" alt="video image">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="client__review-content">
+                        <div class="client__quote">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p>You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.</p>
+                        </div>
+                        <div class="client__details">
+                            <div class="client__info">
+                                <p class="client__name">Khalid Al Dawsry</p>
+                                <p class="client__location">Jeddah, Saudi</p>
+                            </div>
+                            <div class="client__image">
+                                <img src="images/customer.png" alt="customer">
+                                <div class="image-border"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="client__buttons">
+                <button class="client__button-left round-button"><i class="fas fa-chevron-left"></i></button>
+                <button class="client__button-right round-button"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="blog">
+        <div class="footer__container">
+            <div class="footer__heading">
+                <h2 class="heading">We ready to have you the best dining experiences</h2>
+            </div>
+            <div class="footer__contents">
+                <div class="footer__content">
+                    <img src="images/clock.svg" alt="clock">
+                    <h2 class="heading">Opening hours</h2>
+                    <p class="footer-p1">Monday - Sunday</p>
+                    <p class="footer-p2">9:00 AM to 11:30 PM</p>
+                </div>
+                <div class="footer__content">
+                    <img src="images/call-alt.svg" alt="call">
+                    <h2 class="heading">LET'S TALK</h2>
+                    <p class="footer-p1">Phone: 1-800-222-4545</p>
+                    <p class="footer-p2">Fax: 1-800-222-4545</p>
+                </div>
+                <div class="footer__content">
+                    <img src="images/mail.svg" alt="mail">
+                    <h2 class="heading">BOOK A TABLE</h2>
+                    <p class="footer-p1">Email: demo@website.com</p>
+                    <p class="footer-p2">Support: support@website.com</p>
+                </div>
+                <div class="footer__content">
+                    <img src="images/map-pin.svg" alt="map">
+                    <h2 class="heading">Our Address</h2>
+                    <p class="footer-p1">123 Stree New York City , United</p>
+                    <p class="footer-p2">States Of America.</p>
+                </div>
+            </div>
+            <div class="footer__social">
+                <div class="footer__icons">
+                    <a href="https://facebook.com" target="_blank" class="footer__social-link">
+                        <i class="fa-brands fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="https://x.com" target="_blank" class="footer__social-link">
+                        <i class="fa-brands fa-twitter fa-2x"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="footer__social-link">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="footer__social-link">
+                        <i class="fa-brands fa-linkedin fa-2x"></i>
+                    </a>
+                </div>
+                <p>&copy; 2023 All Rights Reserved </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
