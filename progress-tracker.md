@@ -6,25 +6,25 @@ This file tracks my progress through the BSS Software Engineering Internship tra
 
 ## Phase 1 - HTML & CSS
 
-**Status:** In progress
+**Status:** Completed
 
 ### Learning and Assignments
 
-- [ ] Complete assigned HTML and CSS learning resources
+- [x] Complete assigned HTML and CSS learning resources
 - [x] Task 1.1 - Geometric Precision (Bangladesh Flag)
 - [x] Task 1.2 - CSS Grid Mastery (Advanced Image Gallery/Bento Image Gallery)
 - [x] Task 1.3 - Structural Logic (Simple Analog Clock UI)
-- [ ] Task 2.1 - Figma Conversion (Convention Center)
-- [ ] Task 2.2 - Figma Conversion (Restaurant System)
-- [ ] Task 2.3 - Figma Conversion (Furniture E-commerce)
-- [ ] Assessment - Static Personal Portfolio
+- [x] Task 2.1 - Figma Conversion (Convention Center)
+- [x] Task 2.2 - Figma Conversion (Restaurant System)
+- [x] Task 2.3 - Figma Conversion (Furniture E-commerce) (Not Assigned)
+- [x] Assessment - Static Personal Portfolio
 
 ## Phase 2 - Bootstrap
 
-**Status:** Not started
+**Status:** In progress
 
 - [ ] Complete assigned learning resources
-- [ ] Task 1.1 - Figma Conversion (Doctor House)
+- [ ] Task 1.1 - Figma Conversion (Doctor House) (Not Assigned)
 - [ ] Task 1.2 - Figma Conversion (E-commerce)
 - [ ] Assessment
 
