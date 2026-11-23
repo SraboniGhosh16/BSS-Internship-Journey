@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>SHOP.CO</title>
+  </head>
+  <body>
+    <!-- Alert Message -->
+    <div class="alert bg-black alert-dismissible rounded-0 fade show d-flex justify-content-center align-items-center p-3" role="alert">
+      <div class="alert-text text-white text-center custom-font-size">
+        Sign up and get 20% off to your first order. <a href="#footer" class="alert-link text-white">Sign Up Now</a>
+      </div>
+      
+      <button type="button" class="btn-close btn-close-white d-md-block d-none" data-bs-dismiss="alert"></button>
+    </div>
+
+    <!-- Nabar -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+      <div class="container">
+        <!-- Hamburger Menu Icon -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon custom-navbar"></span>
+        </button>
+
+        <!-- Brand Name -->
+        <a href="#" class="navbar-brand">
+          <h2 class="text-black custom-font-family fs-2" style="text-align: start;">SHOP.CO</h2>
+        </a>
+
+        <!-- Search box/button and other buttons -->
+        <div class="navbar-icons-container d-flex gap-4 align-items-center justify-content-end flex-grow-1 ms-lg-4 order-lg-3">
+          <div class="input-group rounded-pill overflow-hidden d-none d-lg-flex flex-grow-1" style="max-width: 577px;">
+            <span class="input-group-text border-0" style="background-color:#F0F0F0; color: rgba(0, 0, 0, 0.4);"><i class="fas fa-search"></i></span>
+            <input type="text" class="form-control border-0" style="background-color:#F0F0F0;" placeholder="Search for products...">
+          </div>
+
+          <div class="navbar-icons d-flex align-items-center gap-3">
+            <img src="images/search.svg" class="d-lg-none" alt="search">
+            <img src="images/cart.svg" alt="cart">
+            <img src="images/user.svg" alt="user">
+          </div>
+        </div>
+        
+        <!-- Navbar Menu Items -->
+        <div class="collapse navbar-collapse flex-grow-0 order-lg-2" id="navbarNavDropdown">
+          <ul class="navbar-nav gap-lg-3 flex-grow-1 mx-auto mx-xl-5 justify-content-center align-items-center">
+            <li class="nav-item">
+              <div class="dropdown">
+                <button class="btn bg-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Shop <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="category.html">Casual</a></li>
+                  <li><a class="dropdown-item" href="category.html">Formal</a></li>
+                  <li><a class="dropdown-item" href="category.html">Party</a></li>
+                  <li><a class="dropdown-item" href="category.html">Gym</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#top-selling" class="nav-link text-black">On Sale</a>
+            </li>
+            <li class="nav-item">
+              <a href="#new-arrivals" class="nav-link text-black">New Arrivals</a>
+            </li>
+            <li class="nav-item">
+              <a href="#brands" class="nav-link text-black">Brands</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header" style="background-color: #F2F0F1;">
+      <div class="container">
+        <div class="row align-items-center gy-2">
+          <div class="col-lg-6">
+              <div class="my-4">
+                <h1 class="header-heading custom-font-family mb-4">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+                <p class="header-text fs-6 mb-4" style="color: #00000099;">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+                <a href="category.html">
+                  <button class="btn btn-dark bg-black rounded-5 mb-4" style="width: 210px; height: 52px;">Shop Now</button>
+                </a>
+              </div>
+              
+              <div class="header-stats d-flex flex-wrap justify-content-center justify-content-md-between align-items-center gap-3 mt-4">
+                <div class="header-stat">
+                  <h2 class="fs-1 fw-bold text-black">200+</h2>
+                  <p class="fs-6 mb-0" style="color: #00000099;">International Brands</p>
+                </div>
+                <div class="vr" style="opacity: 10%;"></div>
+
+                <div class="header-stat">
+                  <h2 class="fs-1 fw-bold text-black">2,000+</h2>
+                  <p class="fs-6 mb-0" style="color: #00000099;">High-Quality Products</p>
+                </div>
+                <div class="vr d-sm-block d-none" style="opacity: 10%;"></div>
+
+                <div class="header-stat text-sm-start text-center">
+                  <h2 class="fs-1 fw-bold text-black">30,000+</h2>
+                  <p class="fs-6 mb-0" style="color: #00000099;">Happy Customers</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-6 px-0 position-relative">
+            <div class="image-container">
+              <img src="images/home-background.png" alt="" class="img-fluid" style="object-fit: cover; object-position: 92%; height: 663px;">
+            </div>
+            <img src="images/star.svg" alt="star" class="decoration-star position-absolute">
+            <img src="images/star.svg" alt="star" class="decoration-star-2 position-absolute">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Brands -->
+    <section id="brands" class="brands" style="background-color: #000;">
+      <div class="container p-3">
+        <div class="row my-3 d-flex justify-content-center align-items-center text-center">
+          <div class="col-md-2 col-4 my-2">
+            <img src="images/versace.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-2 col-4 my-2">
+            <img src="images/zara.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-2 col-4 my-2">
+            <img src="images/gucci.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-3 col-4 my-2">
+            <img src="images/prada.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-3 col-4 my-2">
+            <img src="images/ck.png" alt="" class="img-fluid">
+          </div>          
+        </div>
+      </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section id="new-arrivals" class="new-arrivals my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 align-items-center text-center">
+            <h2 class="custom-font-family xl-text text-uppercase">New Arrivals</h2>
+          </div>
+        </div>
+
+        <div class="overflow-auto" style="scrollbar-width: none;">
+        <div class="row my-3 flex-nowrap g-3">
+          <!-- Column 1 for Card 1 -->
+          <div class="col-lg-3 col-sm-6 col-7 card-container">
+            <div class="card border-0">
+              <div class="card-image">
+                <img src="images/new-arrivals-1.png" alt="" class="card-img-top rounded-4 img-fluid">
+              </div>
+              <div class="card-body">
+                <h2 class="card-title fw-bold fs-5">T-shirt with Tape Details</h2>
+                
+                <div class="product-rating d-flex gap-2">
+                  <div class="product-stars text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                  </div>
+                  <p>4.5/<span style="color: #00000099;">5</span></p>
+                </div>
+
+                <div class="product-price d-flex gap-2">
+                  <h2 class="new-price fw-bold fs-4 text-black">$120</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 for Card 2 -->
+          <div class="col-lg-3 col-sm-6 col-7">
+            <div class="card border-0">
+              <div class="card-image">
+                <img src="images/new-arrivals-2.png" alt="" class="card-img-top rounded-4 img-fluid">
+              </div>
+              <div class="card-body">
+                <h2 class="card-title fw-bold fs-5">Skinny Fit Jeans</h2>
+                
+                <div class="product-rating d-flex gap-2">
+                  <div class="product-stars text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                  </div>
+                  <p>3.5/<span style="color: #00000099;">5</span></p>
+                </div>
+
+                <div class="product-price d-flex gap-2">
+                  <h2 class="new-price fw-bold fs-4 text-black">$240</h2>
+                  <h2 class="prev-price fw-bold fs-4 thin-line-through" style="color: #00000066;">$260</h2>
+                  <span class="badge rounded-pill d-inline-flex align-items-center justify-content-center" style="font-size: 12px; font-weight: 500; width: 58px; height: 28px; background-color: #FF33331A; color: #FF3333; padding: 6px 14px 6px 14px;">-20%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 for Card 3 -->
+          <div class="col-lg-3 col-sm-6 col-7">
+            <div class="card border-0">
+              <div class="card-image">
+                <img src="images/new-arrivals-3.png" alt="" class="card-img-top rounded-4 img-fluid">
+              </div>
+              <div class="card-body">
+                <h2 class="card-title fw-bold fs-5">Checkered Shirt</h2>
+                
+                <div class="product-rating d-flex gap-2">
+                  <div class="product-stars text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                  </div>
+                  <p>4.5/<span style="color: #00000099;">5</span></p>
+                </div>
+
+                <div class="product-price d-flex gap-2">
+                  <h2 class="new-price fw-bold fs-4 text-black">$180</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 for Card 4 -->
+          <div class="col-lg-3 col-sm-6 col-7">
+            <div class="card border-0">
+              <div class="card-image">
+                <img src="images/new-arrivals-4.png" alt="" class="card-img-top rounded-4 img-fluid">
+              </div>
+              <div class="card-body">
+                <h2 class="card-title fw-bold fs-5">Sleeve Striped T-shirt</h2>
+                
+                <div class="product-rating d-flex gap-2">
+                  <div class="product-stars text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                  </div>
+                  <p>4.5/<span style="color: #00000099;">5</span></p>
+                </div>
+
+                <div class="product-price d-flex gap-2">
+                  <h2 class="new-price fw-bold fs-4 text-black">$130</h2>
+                  <h2 class="prev-price fw-bold fs-4 thin-line-through" style="color: #00000066;">$160</h2>
+                  <span class="badge rounded-pill d-inline-flex align-items-center justify-content-center" style="font-size: 12px; font-weight: 500; width: 58px; height: 28px; background-color: #FF33331A; color: #FF3333; padding: 6px 14px 6px 14px;">-30%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-2 offset-lg-5 col-md-4 offset-md-4 col-12 d-grid">
+            <a href="category.html" class="btn btn-lg btn-outline-secondary text-black fs-6 rounded-5" style="border: solid 2px #0000001A;">View All</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Selling -->
+    <section id="top-selling" class="top-selling my-5">
+      <div class="container">
+        <hr class="my-5 border-black opacity-10">
+        <div class="row">
+          <div class="col-12 align-items-center text-center">
+            <h2 class="custom-font-family xl-text text-uppercase">Top Selling</h2>
+          </div>
+        </div>
+
+        <div class="overflow-auto" style="scrollbar-width: none;">
+        <div class="row my-3 flex-nowrap g-3">
+          <!-- Column 1 for Card 1 -->
+          <div class="col-lg-3 col-sm-6 col-7 card-container">
+            <div class="card border-0">
+              <div class="card-image">
+                <img src="images/top-selling-1.png" alt="" class="card-img-top rounded-4 img-fluid">
+              </div>
+              <div class="card-body">
+                <h2 class="card-title fw-bold fs-5">Vertical Striped Shirt</h2>
+                
+                <div class="product-rating d-flex gap-3">
+                  <div class="product-stars text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <p>5.0/<span style="color: #00000099;">5</span></p>
+                </div>
+
+                <div class="product-price d-flex gap-2">
+                  <h2 class="new-price fw-bold fs-4 text-black">$212</h2>
+                  <h2 class="prev-price fw-bold fs-4 thin-line-through" style="color: #00000066;">$232</h2>
+                  <span class="badge rounded-pill d-inline-flex align-items-center justify-content-center" style="font-size: 12px; font-weight: 500; width: 58px; height: 28px; background-color: #FF33331A; color: #FF3333; padding: 6px 14px 6px 14px;">-20%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 for Card 2 -->
+          <div class="col-lg-3 col-sm-6 col-7">
+            <div class="card border-0">
+              <div class="card-image">
+                <img src="images/top-selling-2.png" alt="" class="card-img-top rounded-4 img-fluid">
+              </div>
+              <div class="card-body">
+                <h2 class="card-title fw-bold fs-5">Courage Graphic T-shirt</h2>
+                
+                <div class="product-rating d-flex gap-3">
+                  <div class="product-stars text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <p>4.0/<span style="color: #00000099;">5</span></p>
+                </div>
+
+                <div class="product-price d-flex gap-2">
+                  <h2 class="new-price fw-bold fs-4 text-black">$145</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 for Card 3 -->
+          <div class="col-lg-3 col-sm-6 col-7">
+            <div class="card border-0">
+              <div class="card-image">
+                <img src="images/top-selling-3.png" alt="" class="card-img-top rounded-4 img-fluid">
+              </div>
+              <div class="card-body">
+                <h2 class="card-title fw-bold fs-5">Loose Fit Bermuda Shorts</h2>
+                
+                <div class="product-rating d-flex gap-3">
+                  <div class="product-stars text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <p>3.0/<span style="color: #00000099;">5</span></p>
+                </div>
+
+                <div class="product-price d-flex gap-2">
+                  <h2 class="new-price fw-bold fs-4 text-black">$80</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 for Card 4 -->
+          <div class="col-lg-3 col-sm-6 col-7">
+            <div class="card border-0">
+              <div class="card-image">
+                <img src="images/top-selling-4.png" alt="" class="card-img-top rounded-4 img-fluid">
+              </div>
+              <div class="card-body">
+                <h2 class="card-title fw-bold fs-5">Faded Skinny Jeans</h2>
+                
+                <div class="product-rating d-flex gap-2">
+                  <div class="product-stars text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                  </div>
+                  <p>4.5/<span style="color: #00000099;">5</span></p>
+                </div>
+
+                <div class="product-price d-flex gap-2">
+                  <h2 class="new-price fw-bold fs-4 text-black">$210</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-2 offset-lg-5 col-md-4 offset-md-4 col-12 d-grid">
+            <a href="category.html" class="btn btn-lg btn-outline-secondary text-black fs-6 rounded-5" style="border: solid 2px #0000001A;">View All</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Browse -->
+    <section class="browse mt-6 mb-3 mx-4">
+      <div class="container py-5 rounded-4" style="background-color: #F0F0F0;">
+        <div class="row mb-5">
+          <div class="col-10 offset-1 align-items-center text-center">
+            <h2 class="custom-font-family xl-text text-uppercase">BROWSE BY dress STYLE</h2>
+          </div>
+        </div>
+
+        <div class="row mx-3 mt-3 mb-3 gy-3">
+          <div class="col-md-4">
+            <a href="category.html" class="text-decoration-none text-black">
+            <div class="card border-0 rounded-4 position-relative overflow-hidden browse-cards">
+              <img src="images/casual.png" alt="" class="card-img casual-image" style="object-fit: cover;">
+              <div class="card-img-overlay">
+                <div class="card-title fw-bold ms-3">Casual</div>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="col-md-8">
+            <a href="category.html" class="text-decoration-none text-black">
+            <div class="card border-0 rounded-4 position-relative overflow-hidden browse-cards">
+              <img src="images/formal.png" alt="" class="card-img formal-image" style="object-fit: cover;">
+              <div class="card-img-overlay">
+                <div class="card-title fw-bold ms-3">Formal</div>
+              </div>
+            </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="row mx-3 mb-3 gy-3">
+          <div class="col-md-8">
+            <a href="category.html" class="text-decoration-none text-black">
+            <div class="card border-0 rounded-4 position-relative overflow-hidden browse-cards">
+              <img src="images/party.png" alt="" class="card-img party-image" style="object-fit: cover;">
+              <div class="card-img-overlay">
+                <div class="card-title fw-bold ms-3">Party</div>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="category.html" class="text-decoration-none text-black">
+            <div class="card border-0 rounded-4 position-relative overflow-hidden browse-cards">
+              <img src="images/gym.png" alt="" class="card-img gym-image" style="object-fit: cover;">
+              <div class="card-img-overlay">
+                <div class="card-title fw-bold ms-3">Gym</div>
+              </div>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+    <!-- Customers -->
+    <section class="customers py-5 mx-3 mb-7">
+      <div class="container">
+        <div class="row">
+          <div class="col-9">
+            <h2 class="custom-font-family xl-text text-uppercase">Our Happy Customers</h2>
+          </div>
+          <div class="col-3 d-flex justify-content-end align-items-end">
+            <button class="btn" id="prevReviewButton"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="btn" id="nextReviewButton"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-container position-relative">
+        <div class="blur-left position-absolute top-0 start-0 h-100 d-md-block d-none" style="backdrop-filter: blur(1px); width: 13%; z-index: 2;"></div>
+          <div class="overflow-hidden" id="review-customer-cards">
+            <div class="row my-5 flex-nowrap customer-cards">
+              <!-- Review 1 -->
+              <div class="col-lg-3 col-md-6">
+                <div class="card p-4 mx-2 rounded-4 customer-card">
+                  <div class="d-flex text-warning gap-1 mb-3">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="card-title d-flex align-items-center gap-2 mb-2">
+                    <h2 class="fw-bold fs-5 text-black mb-0">Sarah M.</h2>
+                    <i class="fa-solid fa-circle-check" style="color: #01AB31;"></i>
+                  </div>
+                  <p class="fs-6" style="font-weight: 400; color: #00000099;">
+                    "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+                  </p>
+                </div>
+              </div>
+
+              <!-- Review 2 -->
+              <div class="col-lg-3 col-md-6">
+                <div class="card p-4 mx-2 rounded-4 customer-card">
+                  <div class="d-flex text-warning gap-1 mb-3">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="card-title d-flex align-items-center gap-2 mb-2">
+                    <h2 class="fw-bold fs-5 text-black mb-0">Sarah M.</h2>
+                    <i class="fa-solid fa-circle-check" style="color: #01AB31;"></i>
+                  </div>
+                  <p class="fs-6" style="font-weight: 400; color: #00000099;">
+                    "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+                  </p>
+                </div>
+              </div>
+
+              <!-- Review 3 -->
+              <div class="col-lg-3 col-md-6">
+                <div class="card p-4 mx-2 rounded-4 customer-card">
+                  <div class="d-flex text-warning gap-1 mb-3">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="card-title d-flex align-items-center gap-2 mb-2">
+                    <h2 class="fw-bold fs-5 text-black mb-0">Alex K.</h2>
+                    <i class="fa-solid fa-circle-check" style="color: #01AB31;"></i>
+                  </div>
+                  <p class="fs-6" style="font-weight: 400; color: #00000099;">
+                    "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”
+                  </p>
+                </div>
+              </div>
+
+              <!-- Review 4 -->
+              <div class="col-lg-3 col-md-6">
+                <div class="card p-4 mx-2 rounded-4 customer-card">
+                  <div class="d-flex text-warning gap-1 mb-3">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="card-title d-flex align-items-center gap-2 mb-2">
+                    <h2 class="fw-bold fs-5 text-black mb-0">James L.</h2>
+                    <i class="fa-solid fa-circle-check" style="color: #01AB31;"></i>
+                  </div>
+                  <p class="fs-6" style="font-weight: 400; color: #00000099;">
+                    "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”
+                  </p>
+                </div>
+              </div>
+
+              <!-- Review 5 -->
+              <div class="col-lg-3 col-md-6">
+                <div class="card p-4 mx-2 rounded-4 customer-card">
+                  <div class="d-flex text-warning gap-1 mb-3">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="card-title d-flex align-items-center gap-2 mb-2">
+                    <h2 class="fw-bold fs-5 text-black mb-0">Mooen</h2>
+                    <i class="fa-solid fa-circle-check" style="color: #01AB31;"></i>
+                  </div>
+                  <p class="fs-6" style="font-weight: 400; color: #00000099;">
+                    "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="blur-right position-absolute top-0 end-0 h-100 d-md-block d-none" style="backdrop-filter: blur(1px); width: 13%; z-index: 2;"></div>
+      </div>
+    </section>
+
+    <!-- Footer with Newsletter -->
+    <footer id="footer" class="footer pt-1 pb-5" style="background-color: #F0F0F0;">
+      <div class="container">
+        <!-- Newsletter with negative margin -->
+        <div class="newsletter-container mx-4 mb-4" style="margin-top: -110px;">
+          <div class="row bg-black rounded-4 p-lg-5 p-2 py-4 gy-3">
+            <div class="col-md-6">
+              <h2 class="custom-font-family fs-1 text-white text-uppercase">Stay Upto date about our latest offers</h2>
+            </div>
+            
+            <div class="col-md-4 offset-md-2 d-flex flex-column gap-3">
+              <form>
+                <div class="input-group rounded-pill overflow-hidden d-flex" style="height: 48px;">
+                  <span class="input-group-text border-0 bg-white ps-3"><img src="images/email.svg" alt=""></span>
+                  <input type="email" class="form-control border-0 fs-6" placeholder="Enter your email address">
+                </div>
+              </form>
+              <div class="d-grid">
+                <button class="btn btn-light text-black rounded-5 fs-6" style="height: 48px; font-weight: 500;">
+                  Subscribe to Newsletter
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Content -->
+        <div class="row py-3 gy-4">
+          <!-- for company details -->
+          <div class="col-md-3 d-flex flex-column justify-content-space-between gap-2">
+            <h2 class="custom-font-family fs-2 ms-2">SHOP.CO</h2>
+            <p class="fs-6 ms-2" style="color: #00000099;">We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+            <div class="footer-icons mt-2">
+              <span class="fa-stack fa-lg">
+                <a href="https://twitter.com" target="_blank">
+                  <i class="fas fa-circle fa-stack-2x text-black" style="opacity: 20%;"></i>
+                  <i class="fas fa-circle fa-stack-1x text-white" style="font-size: 2.3rem;"></i>
+                  <i class="fab fa-twitter fa-stack-1x text-black"></i>
+                </a>
+              </span>
+              <span class="fa-stack fa-lg">
+                <a href="https://facebook.com" target="_blank">
+                  <i class="fas fa-circle fa-stack-2x text-black" style="opacity: 20%;"></i>
+                  <i class="fas fa-circle fa-stack-1x text-black" style="font-size: 2.3rem;"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x text-white"></i>
+                </a>
+              </span>
+              <span class="fa-stack fa-lg">
+                <a href="https://instagram.com" target="_blank">
+                  <i class="fas fa-circle fa-stack-2x text-black" style="opacity: 20%;"></i>
+                  <i class="fas fa-circle fa-stack-1x text-white" style="font-size: 2.3rem;"></i>
+                  <i class="fab fa-instagram fa-stack-1x text-black"></i>
+                </a>
+              </span>
+              <span class="fa-stack fa-lg">
+                <a href="https://github.com" target="_blank">
+                  <i class="fas fa-circle fa-stack-2x text-black" style="opacity: 20%;"></i>
+                  <i class="fas fa-circle fa-stack-1x text-white" style="font-size: 2.3rem;"></i>
+                  <i class="fab fa-github fa-stack-1x text-black"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+
+          <!-- for other links -->
+          <div class="col-md-8 offset-md-1">
+            <div class="row">
+              <!-- Company Column -->
+              <div class="col-md-3 col-6 my-2">
+                <h2 class="fs-6 text-uppercase text-black mb-4" style="letter-spacing: 3px;">Company</h2>
+                <ul class="list-unstyled d-flex flex-column gap-3">
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">About</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Features</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Works</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Career</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Help Column -->
+              <div class="col-md-3 col-6 my-2">
+                <h2 class="fs-6 text-uppercase text-black mb-4" style="letter-spacing: 3px;">Help</h2>
+                <ul class="list-unstyled d-flex flex-column gap-3">
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Customer Support</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Delivery Details</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Terms & Conditions</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- FAQ Column -->
+              <div class="col-md-3 col-6 my-2">
+                <h2 class="fs-6 text-uppercase text-black mb-4" style="letter-spacing: 3px;">FAQ</h2>
+                <ul class="list-unstyled d-flex flex-column gap-3">
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Account</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Manage Deliveries</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Orders</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Payments</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Resources Column -->
+              <div class="col-md-3 col-6 my-2">
+                <h2 class="fs-6 text-uppercase text-black mb-4" style="letter-spacing: 3px;">Resources</h2>
+                <ul class="list-unstyled d-flex flex-column gap-3">
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Free eBooks</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Development Tutorial</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">How to - Blog</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Youtube Playlist</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+        <!-- Copyright and payments -->
+        <div class="row py-3 gy-3 justify-content-center align-items-center">
+          <div class="col-md-6 copyright-text">
+            <p class="custom-font-size m-0" style="color: #00000099;">
+              Shop.co &copy; 2000-2023, All Rights Reserved
+            </p>
+          </div>
+
+          <div class="col-md-6 d-flex justify-content-end gap-3 payment-cards">
+            <a href="" class="text-decoration-none bg-white d-flex justify-content-center align-items-center rounded-3" style="width: 46.61px; height: 30.03px;">
+              <img src="images/visa.svg" class="img-fluid" alt="">
+            </a>
+            <a href="" class="text-decoration-none bg-white d-flex justify-content-center align-items-center rounded-3" style="width: 46.61px; height: 30.03px;">
+              <img src="images/mastercard.svg" class="img-fluid" alt="">
+            </a>
+            <a href="" class="text-decoration-none bg-white d-flex justify-content-center align-items-center rounded-3" style="width: 46.61px; height: 30.03px;">
+              <img src="images/paypal.svg" class="img-fluid" alt="">
+            </a>
+            <a href="" class="text-decoration-none bg-white d-flex justify-content-center align-items-center rounded-3" style="width: 46.61px; height: 30.03px;">
+              <img src="images/applepay.svg" class="img-fluid" alt="">
+            </a>
+            <a href="" class="text-decoration-none bg-white d-flex justify-content-center align-items-center rounded-3" style="width: 46.61px; height: 30.03px;">
+              <img src="images/gpay.svg" class="img-fluid" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/script.js"></script>
+  </body>
+</html>

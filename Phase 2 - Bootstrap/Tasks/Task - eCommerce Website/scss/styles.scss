@@ -1,0 +1,312 @@
+body {
+    font-family: 'satoshi', serif;
+}
+
+@font-face {
+  font-family: "Integral CF";
+  src:
+    url(../webfonts/IntegralCF/IntegralCFBold.woff) format("woff2"),
+    url(../webfonts/IntegralCF/IntegralCFBold.woff2) format("woff");
+//   font-weight: 400;
+//   font-style: normal;
+//   font-display: swap;
+}
+
+// utility classes
+.custom-font-size {
+    font-size: 14px;
+}
+
+.custom-font-family {
+  font-family: "Integral CF", sans-serif;
+  font-weight: 700;
+  color: #000;
+}
+
+.xl-text {
+    font-size: 48px;
+}
+
+.thin-line-through {
+    text-decoration: line-through;
+    text-decoration-thickness: 1.5px;
+}
+
+.custom-navbar {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar {
+    transition: all 0.5s ease-in-out;
+}
+
+.header-heading {
+    font-size: 64px;
+    line-height: 64px;
+}
+.header .decoration-star {
+    top: 120px;
+    right: 5px;
+    height: 104px;
+    width: 104px;
+}
+.header .decoration-star-2 {
+    top: 330px;
+    left: 50px;
+    height: 56px;
+    width: 56px;
+}
+
+.card-image img {
+    height: 298px;
+}
+
+.browse-cards {
+    height: 289px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+.browse-cards .card-title {
+    font-size: 36px;
+}
+.casual-image {
+    position: absolute;
+    transform: scaleX(-1) scale(2.5);
+    top: 20%;
+    left: -15%;
+}
+.formal-image {
+    position: absolute;
+    top: -2%;
+    left: 46%;
+    transform: scale(1.5);
+}
+.party-image {
+    position: absolute;
+    top: -50%;
+    left: 15%;
+}
+.gym-image {
+    position: absolute;
+    top: -45%;
+    left: 25%;
+}
+
+.customer-cards {
+    justify-content: center;
+}
+.customer-card {
+    height: 100%;
+    // min-height: 240px;
+}
+
+.filtersCanvas {
+    --bs-offcanvas-height: 85vh;
+    overflow-y: auto;
+}
+
+
+@media (max-width:1380px) {
+    .header .image-container img {
+        height: 580px !important;
+        object-position: 92% !important;
+    }
+    .header .decoration-star-2 {
+        left: 20px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .header-heading {
+        font-size: 50px !important;
+    }
+    .header-text {
+        font-size: 14px !important;
+    }
+    .header .image-container img {
+        height: 500px !important;
+        object-position: 90% !important;
+    }
+    .header .decoration-star {
+        height: 76px;
+        width: 76px;
+    }
+    .header .decoration-star-2 {
+        height: 44px;
+        width: 44px;
+        top: 250px;
+        left: 30px;
+    }
+}
+
+@media(max-width: 992px) {
+    .header .btn {
+        width: 100% !important;
+    }
+    .header .image-container img {
+        height: 660px !important;
+    }
+    .party-image {
+        top: -10%;
+    }
+    .gym-image {
+        top: 0;
+    }
+}
+
+@media(max-width: 768px) {
+    .alert-text {
+        font-size: 12px;
+    }
+    .header-heading {
+        font-size: 36px !important;
+        line-height: 34px;
+    }
+    .header .image-container img {
+        height: 500px !important;
+    }
+    .header .decoration-star {
+        height: 76px;
+        width: 76px;
+    }
+    .header .decoration-star-2 {
+        height: 44px;
+        width: 44px;
+        top: 300px;
+    }
+
+    .xl-text {
+        font-size: 32px;
+    }
+
+    .card-image img {
+        width: 198px;
+        height: 200px;
+    }
+    .card-title {
+        font-size: 15px !important;
+    }
+
+    .browse-cards {
+        height: 190px !important;
+    }
+    .browse-cards .card-title {
+        font-size: 24px !important;
+    }
+    .party-image {
+        top: -70%;
+    }
+    .gym-image {
+        top: -150%;
+    }
+
+    .customer-cards {
+        justify-content: start;
+    }
+    .copyright-text {
+        text-align: center;
+    }
+    .payment-cards {
+        justify-content: center !important;
+    }
+
+    .newsletter-container {
+        margin-top: -150px !important;
+    }
+
+    .custom-progress-bar {
+        width: 54% !important;
+    }
+
+    .products-pagination {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 524px) {
+    .header .image-container img {
+        height: 448px !important;
+        object-position: 90% !important;
+    }
+    .header .decoration-star {
+        top: 40px;
+        right: 15px;
+    }
+    .header .decoration-star-2 {
+        top: 150px;
+        left: 30px;
+    }
+    .header-stats {
+        gap: 2rem !important;
+    }
+    .header-stat h2 {
+        font-size: 24px !important;
+    }
+    .header-stat p {
+        font-size: 12px !important;
+    }
+
+    .card-container {
+        margin-left: 10px;
+    }
+    .casual-image {
+        transform: scaleX(-1) scale(1.8);
+        top: 0%;
+        left: -15%;
+    }
+    .formal-image {
+        top: 18%;
+        left: 56%;
+        transform: scale(2.1);
+    }
+    .party-image {
+        top: -25%;
+        transform: scale(1.2);
+    }
+    .gym-image {
+        top: -65%;
+        left: 20%;
+        transform: scale(0.85);
+    }
+
+    .custom-progress-bar {
+        width: 55% !important;
+    }
+
+    .products-heading {
+        justify-content: start !important;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .products-subheading {
+        width: 100%;
+        justify-content: space-between !important;
+    }
+    .product-rating {
+        font-size: 12px;
+    }
+    .product-rating p {
+        margin-bottom: 0.5rem;
+    }
+    .product-price {
+        gap: 0.3rem !important;
+    }
+    .new-price, .prev-price {
+        font-size: 20px !important;
+    }
+    .product-price span{
+        font-size: 10px !important;
+        width: 42px !important;
+        height: 20px !important;
+    }
+    .product-container .card-image img {
+        height: 174px;
+        width: 172px;
+    }
+    .product-container .card-body {
+        padding: 0.5rem;
+    }
+}

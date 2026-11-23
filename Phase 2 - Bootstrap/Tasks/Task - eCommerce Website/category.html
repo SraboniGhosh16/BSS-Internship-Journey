@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>SHOP.CO</title>
+  </head>
+  <body>
+    <!-- Alert Message -->
+    <div class="alert bg-black alert-dismissible rounded-0 fade show d-flex justify-content-center align-items-center p-3" role="alert">
+      <div class="alert-text text-white text-center custom-font-size">
+        Sign up and get 20% off to your first order. <a href="index.html#footer" class="alert-link text-white">Sign Up Now</a>
+      </div>
+      
+      <button type="button" class="btn-close btn-close-white d-md-block d-none" data-bs-dismiss="alert"></button>
+    </div>
+
+    <!-- Nabar -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+      <div class="container">
+        <!-- Hamburger Menu Icon -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon custom-navbar"></span>
+        </button>
+
+        <!-- Brand Name -->
+        <a href="index.html" class="navbar-brand">
+          <h2 class="text-black custom-font-family fs-2" style="text-align: start;">SHOP.CO</h2>
+        </a>
+
+        <!-- Search box/button and other buttons -->
+        <div class="navbar-icons-container d-flex gap-4 align-items-center justify-content-end flex-grow-1 ms-lg-4 order-lg-3">
+          <div class="input-group rounded-pill overflow-hidden d-none d-lg-flex flex-grow-1" style="max-width: 577px;">
+            <span class="input-group-text border-0" style="background-color:#F0F0F0; color: rgba(0, 0, 0, 0.4);"><i class="fas fa-search"></i></span>
+            <input type="text" class="form-control border-0" style="background-color:#F0F0F0;" placeholder="Search for products...">
+          </div>
+
+          <div class="navbar-icons d-flex align-items-center gap-3">
+            <img src="images/search.svg" class="d-lg-none" alt="search">
+            <img src="images/cart.svg" alt="cart">
+            <img src="images/user.svg" alt="user">
+          </div>
+        </div>
+        
+        <!-- Navbar Menu Items -->
+        <div class="collapse navbar-collapse flex-grow-0 order-lg-2" id="navbarNavDropdown">
+          <ul class="navbar-nav gap-lg-3 flex-grow-1 mx-auto mx-xl-5 justify-content-center align-items-center">
+            <li class="nav-item">
+              <div class="dropdown">
+                <button class="btn bg-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Shop <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="category.html">Casual</a></li>
+                  <li><a class="dropdown-item" href="category.html">Formal</a></li>
+                  <li><a class="dropdown-item" href="category.html">Party</a></li>
+                  <li><a class="dropdown-item" href="category.html">Gym</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#top-selling" class="nav-link text-black">On Sale</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#new-arrivals" class="nav-link text-black">New Arrivals</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#brands" class="nav-link text-black">Brands</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Category -->
+    <section class="mb-8">
+      <div class="container">
+        <hr class="mt-2 mb-4" style="opacity: 0.1;">
+        <!-- breadcrumb -->
+        <div class="row">
+          <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 8 8' %3E%3Cpath d='M2.5 0.5L5.5 4 2.5 7.5' fill='none' stroke='%236c757d' stroke-width='0.8'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb custom-font-size">
+              <li class="breadcrumb-item">
+                <a href="index.html" class="text-decoration-none" style="color: #00000099;">Home</a>
+              </li>
+              <li class="breadcrumb-item active">
+                <a href="category.html" class="text-black text-decoration-none">Casual</a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+
+        <!-- outer row with 2 columns for large screens -->
+        <div class="row align-items-start">
+          <!-- Filters area for large screen and OffCanvas -->
+          <div class="col-md-3 p-3 border rounded-4 filtersCanvas offcanvas-md offcanvas-bottom" id="filtersCanvas" tabindex="-1">
+            <div class="filters-heading d-flex justify-content-between">
+              <h2 class="fs-5 fw-bold mb-0">Filters</h2>
+              <img src="images/filter-black.svg" alt="" class="img-fluid d-none d-md-block" style="opacity: 40%;">
+              <button type="button" class="btn-close d-md-none" data-bs-dismiss="offcanvas" data-bs-target="#filtersCanvas"></button>
+            </div>
+            
+            <hr class="my-4" style="opacity: 0.1;">
+
+            <!-- Catogory Item Types -->
+            <div class="category-item-types">
+              <div class="dropdown category-item-type">
+                <button class="btn bg-white fs-6 d-flex justify-content-between align-items-center w-100" type="button" data-bs-toggle="dropdown" style="color: #00000099;">
+                  <span>T-shirts</span>
+                  <i class="fas fa-chevron-right fa-sm"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item">Solid T-shirts</a></li>
+                  <li><a class="dropdown-item">Graphic T-shirts</a></li>
+                  <li><a class="dropdown-item">Striped T-shirts</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown category-item-type">
+                <button class="btn bg-white fs-6 d-flex justify-content-between align-items-center w-100" type="button" data-bs-toggle="dropdown" style="color: #00000099;">
+                  <span>Shorts</span>
+                  <i class="fas fa-chevron-right fa-sm"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item">Solid Shorts</a></li>
+                  <li><a class="dropdown-item">Bermuda Shorts</a></li>
+                  <li><a class="dropdown-item">Regular Shorts</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown category-item-type">
+                <button class="btn bg-white fs-6 d-flex justify-content-between align-items-center w-100" type="button" data-bs-toggle="dropdown" style="color: #00000099;">
+                  <span>Shirts</span>
+                  <i class="fas fa-chevron-right fa-sm"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item">Solid Shirts</a></li>
+                  <li><a class="dropdown-item">Checkered Shirts</a></li>
+                  <li><a class="dropdown-item">Striped Shirts</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown category-item-type">
+                <button class="btn bg-white fs-6 d-flex justify-content-between align-items-center w-100" type="button" data-bs-toggle="dropdown" style="color: #00000099;">
+                  <span>Hoodie</span>
+                  <i class="fas fa-chevron-right fa-sm"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item">Solid Hoodie</a></li>
+                  <li><a class="dropdown-item">Graphic Hoodie</a></li>
+                  <li><a class="dropdown-item">Heavy Hoodie</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown category-item-type">
+                <button class="btn bg-white fs-6 d-flex justify-content-between align-items-center w-100" type="button" data-bs-toggle="dropdown" style="color: #00000099;">
+                  <span>Jeans</span>
+                  <i class="fas fa-chevron-right fa-sm"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item">Regular Fit Jeans</a></li>
+                  <li><a class="dropdown-item">Skinny Fit Jeans</a></li>
+                  <li><a class="dropdown-item">Loose Fit Jeans</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <hr class="my-4" style="opacity: 0.1;">
+
+            <!-- Category Price -->
+            <div class="category-price pb-4">
+              <button class="btn bg-white fs-5 text-black d-flex justify-content-between align-items-center w-100" type="button" data-bs-toggle="dropdown" style="color: #00000099;">
+                <span class="fw-bold">Price</span>
+                <i class="fas fa-chevron-up fa-xs"></i>
+              </button>
+              <div class="position-relative" style="padding: 12px;">
+                <div class="progress" role="progressbar" style="height: 6px;">
+                  <div class="progress-bar text-bg-dark custom-progress-bar" style="width: 60%; margin-left: 20%;"></div>
+                </div>
+                <div class="circle-price-1 d-flex flex-column justify-content-center align-items-center gap-1 position-absolute" style="top: 20%; left: 20%;">
+                  <i class="fas fa-circle text-black"></i>
+                  <p class="custom-font-size text-black" style="font-weight: 500;">$50</p>
+                </div>
+                <div class="circle-price-1 d-flex flex-column justify-content-center align-items-center gap-1 position-absolute" style="top: 20%; left: 70%;">
+                  <i class="fas fa-circle text-black"></i>
+                  <p class="custom-font-size text-black" style="font-weight: 500;">$200</p>
+                </div>
+              </div>
+            </div>
+
+            <hr class="my-4" style="opacity: 0.1;">
+
+            <!-- Category Colors -->
+            <div class="category-colors">
+              <button class="btn bg-white fs-5 text-black d-flex justify-content-between align-items-center w-100" type="button" data-bs-toggle="dropdown" style="color: #00000099;">
+                <span class="fw-bold">Colors</span>
+                <i class="fas fa-chevron-up fa-xs"></i>
+              </button>
+
+              <div class="px-3 py-2 d-flex flex-wrap gap-3">
+                <button class="btn rounded-circle" style="height: 37px; width: 37px; background-color: #00c12a; border: solid 2px #00000033;"></button>
+                <button class="btn rounded-circle" style="height: 37px; width: 37px; background-color: #F50606; border: solid 2px #00000033;"></button>
+                <button class="btn rounded-circle" style="height: 37px; width: 37px; background-color: #F5DD06; border: solid 2px #00000033;"></button>
+                <button class="btn rounded-circle" style="height: 37px; width: 37px; background-color: #F57906; border: solid 2px #00000033;"></button>
+                <button class="btn rounded-circle" style="height: 37px; width: 37px; background-color: #06CAF5; border: solid 2px #00000033;"></button>
+                <button class="btn rounded-circle d-flex align-items-center justify-content-center text-white" style="height: 37px; width: 37px; background-color: #063AF5; border: solid 2px #00000033;">
+                  <i class="fas fa-check"></i>
+                </button>
+                <button class="btn rounded-circle" style="height: 37px; width: 37px; background-color: #7D06F5; border: solid 2px #00000033;"></button>
+                <button class="btn rounded-circle" style="height: 37px; width: 37px; background-color: #F506A4; border: solid 2px #00000033;"></button>
+                <button class="btn rounded-circle" style="height: 37px; width: 37px; background-color: #FFFFFF; border: solid 2px #00000033;"></button>
+                <button class="btn rounded-circle" style="height: 37px; width: 37px; background-color: #000000; border: solid 2px #00000033;"></button>
+              </div>
+            </div>
+
+            <hr class="my-4" style="opacity: 0.1;">
+
+            <!-- Category Size -->
+            <div class="category-size">
+              <button class="btn bg-white fs-5 text-black d-flex justify-content-between align-items-center w-100" type="button" data-bs-toggle="dropdown" style="color: #00000099;">
+                <span class="fw-bold">Size</span>
+                <i class="fas fa-chevron-up fa-xs"></i>
+              </button>
+
+              <div class="d-flex flex-wrap gap-2 p-2">
+                <a class="btn btn-light rounded-5" style="padding: 10px 20px 10px 20px; font-size: 14px; color: #00000099;">XX-Small</a>
+                <a class="btn btn-light rounded-5" style="padding: 10px 20px 10px 20px; font-size: 14px; color: #00000099;">X-Small</a>
+                <a class="btn btn-light rounded-5" style="padding: 10px 20px 10px 20px; font-size: 14px; color: #00000099;">Small</a>
+                <a class="btn btn-light rounded-5" style="padding: 10px 20px 10px 20px; font-size: 14px; color: #00000099;">Medium</a>
+                <a class="btn btn-dark rounded-5" style="padding: 10px 20px 10px 20px; font-size: 14px; color: #fff;">Large</a>
+                <a class="btn btn-light rounded-5" style="padding: 10px 20px 10px 20px; font-size: 14px; color: #00000099;">X-Large</a>
+                <a class="btn btn-light rounded-5" style="padding: 10px 20px 10px 20px; font-size: 14px; color: #00000099;">XX-Large</a>
+                <a class="btn btn-light rounded-5" style="padding: 10px 20px 10px 20px; font-size: 14px; color: #00000099;">3X-Large</a>
+                <a class="btn btn-light rounded-5" style="padding: 10px 20px 10px 20px; font-size: 14px; color: #00000099;">4X-Large</a>
+              </div>
+            </div>
+
+            <hr class="my-4" style="opacity: 0.1;">
+
+            <!-- Category Dress Style -->
+            <div class="category-dress-style">
+              <button class="btn bg-white fs-5 text-black d-flex justify-content-between align-items-center w-100" type="button" data-bs-toggle="dropdown" style="color: #00000099;">
+                <span class="fw-bold">Dress Style</span>
+                <i class="fas fa-chevron-up fa-xs"></i>
+              </button>
+
+              <div class="dropdown category-item-type mt-1">
+                <button class="btn bg-white fs-6 d-flex justify-content-between align-items-center w-100" type="button" data-bs-toggle="dropdown" style="color: #00000099;">
+                  <span>Casual</span>
+                  <i class="fas fa-chevron-right fa-sm"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item">T-shirts</a></li>
+                  <li><a class="dropdown-item">Shirts</a></li>
+                  <li><a class="dropdown-item">Jeans</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown category-item-type">
+                <button class="btn bg-white fs-6 d-flex justify-content-between align-items-center w-100" type="button" data-bs-toggle="dropdown" style="color: #00000099;">
+                  <span>Formal</span>
+                  <i class="fas fa-chevron-right fa-sm"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item">Shirts</a></li>
+                  <li><a class="dropdown-item">Trousers</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown category-item-type">
+                <button class="btn bg-white fs-6 d-flex justify-content-between align-items-center w-100" type="button" data-bs-toggle="dropdown" style="color: #00000099;">
+                  <span>Party</span>
+                  <i class="fas fa-chevron-right fa-sm"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item">T-Shirts</a></li>
+                  <li><a class="dropdown-item">Shirts</a></li>
+                  <li><a class="dropdown-item">Trousers</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown category-item-type">
+                <button class="btn bg-white fs-6 d-flex justify-content-between align-items-center w-100" type="button" data-bs-toggle="dropdown" style="color: #00000099;">
+                  <span>Gym</span>
+                  <i class="fas fa-chevron-right fa-sm"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item">T-shirts</a></li>
+                  <li><a class="dropdown-item">Trousers</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Apply Filter Button -->
+            <div class="d-grid py-3">
+              <button class="btn btn-dark text-white rounded-5 custom-font-size" style="height: 48px; font-weight: 500;">
+                Apply Filter
+              </button>
+            </div>
+          </div>
+
+          <!-- Products area -->
+          <div class="col-md-9 px-3" id="products-canvas">
+            <div class="products-heading d-flex justify-content-between align-items-center">
+              <h2 class="fs-2 fw-bold">Casual</h2>
+              <div class="products-subheading d-flex align-items-center gap-3">
+                <p class="fs-6 mb-0" style="color: #00000099;">Showing 1-10 of 100 Products</p>
+                <div class="d-md-flex align-items-center d-none">
+                  <p class="fs-6 mb-0 text-nowrap" style="color: #00000099;">Sort by: </p>
+                  
+                  <select class="form-select border-0 p-2 text-black flex-grow-1" style="width: 135px; font-weight: 500;">
+                    <option selected>Most Popular</option>
+                    <option value="1">New Arrivals</option>
+                    <option value="2">Lowest Price</option>
+                    <option value="3">Higest Price</option>
+                  </select>
+                </div>
+
+                <button class="btn d-md-none d-flex justify-content-center align-items-center rounded-5" style="background-color: #F0F0F0; width: 32px; height: 32px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#filtersCanvas">
+                  <img src="images/filter-black.svg" class="" alt="">
+                </button>
+              </div>
+            </div>
+            
+            <div class="row row-cols-lg-3 row-cols-2 gy-2 my-2">
+              <!-- Product 1 -->
+              <div class="col product-container">
+                <div class="card border-0">
+                  <div class="card-image">
+                    <img src="images/product-1.png" alt="" class="card-img-top rounded-4 img-fluid">
+                  </div>
+                  <div class="card-body">
+                    <h2 class="card-title fw-bold fs-5 text-truncate">Gradient Graphic T-shirt</h2>
+
+                    <div class="product-rating d-flex gap-2">
+                      <div class="product-stars text-warning">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                      </div>
+                      <p>3.5/<span style="color: #00000099;">5</span></p>
+                    </div>
+
+                    <div class="product-price d-flex gap-2">
+                      <h2 class="new-price fw-bold fs-4 text-black">$145</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Product 2 -->
+              <div class="col product-container">
+                <div class="card border-0">
+                  <div class="card-image">
+                    <img src="images/product-2.png" alt="" class="card-img-top rounded-4 img-fluid">
+                  </div>
+                  <div class="card-body">
+                    <h2 class="card-title fw-bold fs-5 text-truncate">Polo with Tipping Details</h2>
+
+                    <div class="product-rating d-flex gap-2">
+                      <div class="product-stars text-warning">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                      </div>
+                      <p>4.5/<span style="color: #00000099;">5</span></p>
+                    </div>
+
+                    <div class="product-price d-flex gap-2">
+                      <h2 class="new-price fw-bold fs-4 text-black">$180</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Product 3 -->
+              <div class="col product-container">
+                <div class="card border-0">
+                  <div class="card-image">
+                    <img src="images/product-3.png" alt="" class="card-img-top rounded-4 img-fluid">
+                  </div>
+                  <div class="card-body">
+                    <h2 class="card-title fw-bold fs-5 text-truncate">Black Striped T-shirt</h2>
+                
+                    <div class="product-rating d-flex gap-3">
+                      <div class="product-stars text-warning">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p>5.0/<span style="color: #00000099;">5</span></p>
+                    </div>
+
+                    <div class="product-price d-flex gap-2">
+                      <h2 class="new-price fw-bold fs-4 text-black">$120</h2>
+                      <h2 class="prev-price fw-bold fs-4 thin-line-through" style="color: #00000066;">$150</h2>
+                      <span class="badge rounded-pill d-inline-flex align-items-center justify-content-center" style="font-size: 12px; font-weight: 500; width: 58px; height: 28px; background-color: #FF33331A; color: #FF3333; padding: 6px 14px 6px 14px;">-30%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Product 4 -->
+              <div class="col product-container">
+                <div class="card border-0">
+                  <div class="card-image">
+                    <img src="images/product-4.png" alt="" class="card-img-top rounded-4 img-fluid">
+                  </div>
+                  <div class="card-body">
+                    <h2 class="card-title fw-bold fs-5 text-truncate">Skinny Fit Jeans</h2>
+                
+                    <div class="product-rating d-flex gap-2">
+                      <div class="product-stars text-warning">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                      </div>
+                      <p>3.5/<span style="color: #00000099;">5</span></p>
+                    </div>
+
+                    <div class="product-price d-flex gap-2">
+                      <h2 class="new-price fw-bold fs-4 text-black">$240</h2>
+                      <h2 class="prev-price fw-bold fs-4 thin-line-through" style="color: #00000066;">$260</h2>
+                      <span class="badge rounded-pill d-inline-flex align-items-center justify-content-center" style="font-size: 12px; font-weight: 500; width: 58px; height: 28px; background-color: #FF33331A; color: #FF3333; padding: 6px 14px 6px 14px;">-20%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Product 5 -->
+              <div class="col product-container">
+                <div class="card border-0">
+                  <div class="card-image">
+                    <img src="images/product-5.png" alt="" class="card-img-top rounded-4 img-fluid">
+                  </div>
+                  <div class="card-body">
+                    <h2 class="card-title fw-bold fs-5 text-truncate">Checkered Shirt</h2>
+
+                    <div class="product-rating d-flex gap-2">
+                      <div class="product-stars text-warning">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                      </div>
+                      <p>4.5/<span style="color: #00000099;">5</span></p>
+                    </div>
+
+                    <div class="product-price d-flex gap-2">
+                      <h2 class="new-price fw-bold fs-4 text-black">$180</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Product 6 -->
+              <div class="col product-container">
+                <div class="card border-0">
+                  <div class="card-image">
+                    <img src="images/product-6.png" alt="" class="card-img-top rounded-4 img-fluid">
+                  </div>
+                  <div class="card-body">
+                    <h2 class="card-title fw-bold fs-5 text-truncate">Sleeve Striped T-shirt</h2>
+                
+                    <div class="product-rating d-flex gap-2">
+                      <div class="product-stars text-warning">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                      </div>
+                      <p>4.5/<span style="color: #00000099;">5</span></p>
+                    </div>
+
+                    <div class="product-price d-flex gap-2">
+                      <h2 class="new-price fw-bold fs-4 text-black">$130</h2>
+                      <h2 class="prev-price fw-bold fs-4 thin-line-through" style="color: #00000066;">$160</h2>
+                      <span class="badge rounded-pill d-inline-flex align-items-center justify-content-center" style="font-size: 12px; font-weight: 500; width: 58px; height: 28px; background-color: #FF33331A; color: #FF3333; padding: 6px 14px 6px 14px;">-30%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Product 7 -->
+              <div class="col d-md-block d-none product-container">
+                <div class="card border-0">
+                  <div class="card-image">
+                    <img src="images/product-7.png" alt="" class="card-img-top rounded-4 img-fluid">
+                  </div>
+                  <div class="card-body">
+                    <h2 class="card-title fw-bold fs-5 text-truncate">Vertical Striped Shirt</h2>
+                
+                    <div class="product-rating d-flex gap-3">
+                      <div class="product-stars text-warning">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p>5.0/<span style="color: #00000099;">5</span></p>
+                    </div>
+
+                    <div class="product-price d-flex gap-2">
+                      <h2 class="new-price fw-bold fs-4 text-black">$212</h2>
+                      <h2 class="prev-price fw-bold fs-4 thin-line-through" style="color: #00000066;">$232</h2>
+                      <span class="badge rounded-pill d-inline-flex align-items-center justify-content-center" style="font-size: 12px; font-weight: 500; width: 58px; height: 28px; background-color: #FF33331A; color: #FF3333; padding: 6px 14px 6px 14px;">-20%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Product 8 -->
+              <div class="col d-md-block d-none product-container">
+                <div class="card border-0">
+                  <div class="card-image">
+                    <img src="images/product-8.png" alt="" class="card-img-top rounded-4 img-fluid">
+                  </div>
+                  <div class="card-body">
+                    <h2 class="card-title fw-bold fs-5 text-truncate">Courage Graphic T-shirt</h2>
+
+                    <div class="product-rating d-flex gap-3">
+                      <div class="product-stars text-warning">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p>4.0/<span style="color: #00000099;">5</span></p>
+                    </div>
+
+                    <div class="product-price d-flex gap-2">
+                      <h2 class="new-price fw-bold fs-4 text-black">$145</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Product 9 -->
+              <div class="col d-md-block d-none product-container">
+                <div class="card border-0">
+                  <div class="card-image">
+                    <img src="images/product-9.png" alt="" class="card-img-top rounded-4 img-fluid">
+                  </div>
+                  <div class="card-body">
+                    <h2 class="card-title fw-bold fs-5 text-truncate">Loose Fit Bermuda Shorts</h2>
+
+                    <div class="product-rating d-flex gap-3">
+                      <div class="product-stars text-warning">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p>3.0/<span style="color: #00000099;">5</span></p>
+                    </div>
+
+                    <div class="product-price d-flex gap-2">
+                      <h2 class="new-price fw-bold fs-4 text-black">$80</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <hr class="my-4" style="opacity: 0.1;">
+
+            <!-- Pagination -->
+            <div class="products-pagination">
+              <div class="d-flex justify-content-between gap-2">
+                <div class="prev-button" style="min-width: 0;">
+                  <a class="btn border rounded-3 custom-font-size text-black d-flex justify-content-center align-items-center gap-2 h-100">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Previous</span>
+                  </a>
+                </div>
+
+                <div class="btn-group" role="group" style="min-width: 0;">
+                  <button type="button" class="btn border-0 rounded-3 active" style="background-color: #0000000F; color: #000000; font-weight: 500; height: 40px; width: 40px;">1</button>
+                  <button type="button" class="btn border-0 rounded-3" style="color: #00000080; font-weight: 500; height: 40px; width: 40px;">2</button>
+                  <button type="button" class="btn border-0 rounded-3 d-md-block d-none" style="color: #00000080; font-weight: 500; height: 40px; width: 40px;">3</button>
+                  <button type="button" class="btn border-0 rounded-3" style="color: #00000080; font-weight: 500; height: 40px; width: 40px;">...</button>
+                  <button type="button" class="btn border-0 rounded-3 d-md-block d-none" style="color: #00000080; font-weight: 500; height: 40px; width: 40px;">8</button>
+                  <button type="button" class="btn border-0 rounded-3" style="color: #00000080; font-weight: 500; height: 40px; width: 40px;">9</button>
+                  <button type="button" class="btn border-0 rounded-3" style="color: #00000080; font-weight: 500; height: 40px; width: 40px;">10</button>
+                </div>
+
+                <div class="prev-button" style="min-width: 0;">
+                  <a class="btn border rounded-3 custom-font-size text-black d-flex justify-content-center align-items-center gap-2 h-100">
+                    <span>Next</span>
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Footer with Newsletter -->
+    <footer id="footer" class="footer pt-1 pb-5" style="background-color: #F0F0F0;">
+      <div class="container">
+        <!-- Newsletter with negative margin -->
+        <div class="newsletter-container mx-4 mb-4" style="margin-top: -110px;">
+          <div class="row bg-black rounded-4 p-lg-5 p-2 py-4 gy-3">
+            <div class="col-md-6">
+              <h2 class="custom-font-family fs-1 text-white text-uppercase">Stay Upto date about our latest offers</h2>
+            </div>
+            
+            <div class="col-md-4 offset-md-2 d-flex flex-column gap-3">
+              <form>
+                <div class="input-group rounded-pill overflow-hidden d-flex" style="height: 48px;">
+                  <span class="input-group-text border-0 bg-white ps-3"><img src="images/email.svg" alt=""></span>
+                  <input type="email" class="form-control border-0 fs-6" placeholder="Enter your email address">
+                </div>
+              </form>
+              <div class="d-grid">
+                <button class="btn btn-light text-black rounded-5 fs-6" style="height: 48px; font-weight: 500;">
+                  Subscribe to Newsletter
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Content -->
+        <div class="row py-3 gy-4">
+          <!-- for company details -->
+          <div class="col-md-3 d-flex flex-column justify-content-space-between gap-2">
+            <h2 class="custom-font-family fs-2 ms-2">SHOP.CO</h2>
+            <p class="fs-6 ms-2" style="color: #00000099;">We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+            <div class="footer-icons mt-2">
+              <span class="fa-stack fa-lg">
+                <a href="https://twitter.com" target="_blank">
+                  <i class="fas fa-circle fa-stack-2x text-black" style="opacity: 20%;"></i>
+                  <i class="fas fa-circle fa-stack-1x text-white" style="font-size: 2.3rem;"></i>
+                  <i class="fab fa-twitter fa-stack-1x text-black"></i>
+                </a>
+              </span>
+              <span class="fa-stack fa-lg">
+                <a href="https://facebook.com" target="_blank">
+                  <i class="fas fa-circle fa-stack-2x text-black" style="opacity: 20%;"></i>
+                  <i class="fas fa-circle fa-stack-1x text-black" style="font-size: 2.3rem;"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x text-white"></i>
+                </a>
+              </span>
+              <span class="fa-stack fa-lg">
+                <a href="https://instagram.com" target="_blank">
+                  <i class="fas fa-circle fa-stack-2x text-black" style="opacity: 20%;"></i>
+                  <i class="fas fa-circle fa-stack-1x text-white" style="font-size: 2.3rem;"></i>
+                  <i class="fab fa-instagram fa-stack-1x text-black"></i>
+                </a>
+              </span>
+              <span class="fa-stack fa-lg">
+                <a href="https://github.com" target="_blank">
+                  <i class="fas fa-circle fa-stack-2x text-black" style="opacity: 20%;"></i>
+                  <i class="fas fa-circle fa-stack-1x text-white" style="font-size: 2.3rem;"></i>
+                  <i class="fab fa-github fa-stack-1x text-black"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+
+          <!-- for other links -->
+          <div class="col-md-8 offset-md-1">
+            <div class="row">
+              <!-- Company Column -->
+              <div class="col-md-3 col-6 my-2">
+                <h2 class="fs-6 text-uppercase text-black mb-4" style="letter-spacing: 3px;">Company</h2>
+                <ul class="list-unstyled d-flex flex-column gap-3">
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">About</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Features</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Works</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Career</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Help Column -->
+              <div class="col-md-3 col-6 my-2">
+                <h2 class="fs-6 text-uppercase text-black mb-4" style="letter-spacing: 3px;">Help</h2>
+                <ul class="list-unstyled d-flex flex-column gap-3">
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Customer Support</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Delivery Details</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Terms & Conditions</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- FAQ Column -->
+              <div class="col-md-3 col-6 my-2">
+                <h2 class="fs-6 text-uppercase text-black mb-4" style="letter-spacing: 3px;">FAQ</h2>
+                <ul class="list-unstyled d-flex flex-column gap-3">
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Account</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Manage Deliveries</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Orders</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Payments</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Resources Column -->
+              <div class="col-md-3 col-6 my-2">
+                <h2 class="fs-6 text-uppercase text-black mb-4" style="letter-spacing: 3px;">Resources</h2>
+                <ul class="list-unstyled d-flex flex-column gap-3">
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Free eBooks</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Development Tutorial</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">How to - Blog</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black" style="opacity: 60%;">Youtube Playlist</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+        <!-- Copyright and payments -->
+        <div class="row py-3 gy-3 justify-content-center align-items-center">
+          <div class="col-md-6 copyright-text">
+            <p class="custom-font-size m-0" style="color: #00000099;">
+              Shop.co &copy; 2000-2023, All Rights Reserved
+            </p>
+          </div>
+
+          <div class="col-md-6 d-flex justify-content-end gap-3 payment-cards">
+            <a href="" class="text-decoration-none bg-white d-flex justify-content-center align-items-center rounded-3" style="width: 46.61px; height: 30.03px;">
+              <img src="images/visa.svg" class="img-fluid" alt="">
+            </a>
+            <a href="" class="text-decoration-none bg-white d-flex justify-content-center align-items-center rounded-3" style="width: 46.61px; height: 30.03px;">
+              <img src="images/mastercard.svg" class="img-fluid" alt="">
+            </a>
+            <a href="" class="text-decoration-none bg-white d-flex justify-content-center align-items-center rounded-3" style="width: 46.61px; height: 30.03px;">
+              <img src="images/paypal.svg" class="img-fluid" alt="">
+            </a>
+            <a href="" class="text-decoration-none bg-white d-flex justify-content-center align-items-center rounded-3" style="width: 46.61px; height: 30.03px;">
+              <img src="images/applepay.svg" class="img-fluid" alt="">
+            </a>
+            <a href="" class="text-decoration-none bg-white d-flex justify-content-center align-items-center rounded-3" style="width: 46.61px; height: 30.03px;">
+              <img src="images/gpay.svg" class="img-fluid" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/script.js"></script>
+  </body>
+</html>
