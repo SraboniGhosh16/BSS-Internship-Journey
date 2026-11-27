@@ -1,41 +1,58 @@
-# Ebook Website
+# Project 1 - eBook Website
 
-Bootstrap website for downloading a free E-book. This website has a light, business-oriented design.
+## Overview
 
-<img src="./images/screen.png"  />
+This project is part of Phase 2 of my learning journey through the BSS Software Engineering Internship.
+
+The objective was to create a responsive eBook promotional website for *Blog Mastery*, an eBook focused on blogging, content creation and monetization. The website introduces the eBook, highlights its benefits, provides download opportunities and includes a separate contact page.
+
+## Course Information
+
+- **Program:** BSS Software Engineering Internship
+- **Phase:** Phase 2
+- **Project:** Project 1 - eBook Website
+
+## Live Demo
+
+[**View the Project Website**](https://ebook-website-ew.vercel.app/)
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- Bootstrap 5
+- Sass (SCSS)
+- JavaScript
+- Font Awesome
+- Formspree
 
 ## Features
 
-- Modern layout with custom colors/styles/backgrounds
-- Responsive design
-- Sticky navbar with style changes on scroll
-- Bootstrap modals
-- Form & input styles
-- Testimonials
-- Contact page with Google Map
+- Responsive navigation bar with scroll-based styling.
+- Hero section introducing the Blog Mastery eBook.
+- Email input form for free eBook downloads.
+- Feature highlights explaining the benefits of the eBook.
+- Detailed content sections covering blogging, creativity and monetization.
+- Bootstrap modal windows for additional eBook information.
+- Testimonial section.
+- Download section with a call-to-action.
+- Separate contact page with a contact form.
+- Embedded Google Maps location.
+- Social media links and footer navigation.
+- Responsive layout for different screen sizes.
 
-## Usage
+## Concepts Practised
 
-This website is built with [Bootstrap](https://getbootstrap.com/) and [Sass](https://sass-lang.com/). It uses [Font Awesome](https://fontawesome.com/) for icons.
+- Bootstrap grid system and responsive containers.
+- Bootstrap navigation and utility classes.
+- Bootstrap modal components and JavaScript interactions.
+- Bootstrap form controls and buttons.
+- Bootstrap Flexbox and spacing utilities.
+- Sass variables, nesting and custom styling.
+- JavaScript DOM selection and scroll event handling.
+- CSS transitions and responsive media queries.
+- Integrating external services through Formspree and Google Maps.
 
-In order to customize this website, you need to install [Node.js](https://nodejs.org/en/). Then, clone this repository and run:
+## Implementation Notes
 
-```bash
-npm install
-```
-
-This will install Bootstrap, Sass and Font Awesome. To build your CSS files from Sass, run:
-
-```bash
-npm run sass:build
-```
-
-To watch your Sass files for changes, run:
-
-```bash
-npm run sass:watch
-```
-
-You can add Bootstrap variables to the `bootstrap.scss` file. You can look at the file `node_modules/bootstrap/dist/scss/_variables.scss` for a list of all the variables. Do NOT edit the `variables.scss` file directly, as it will be overwritten when you update Bootstrap.
-
-To add your own custom styles, use the `styles.scss` file.
+The website is organised into multiple sections, including the hero, feature highlights, eBook details, testimonials, download area and contact information. Bootstrap modals provide additional information about the eBook, while JavaScript changes the navigation bar's appearance when the user scrolls. The contact form uses Formspree for form submission and the separate contact page includes an embedded Google Maps location.

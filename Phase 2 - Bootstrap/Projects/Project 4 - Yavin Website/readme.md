@@ -1,43 +1,61 @@
-# Yavin Website
+# Project 4 - Yavin Website
 
-Bootstrap website for a company that creates and customizes office spaces. It could be used for just about any kind of business. It is a very light business theme with a clean design.
+## Overview
 
-<img src="./images/screen.png" />
+This project is part of Phase 2 of my learning journey through the BSS Software Engineering Internship.
+
+The objective was to develop a responsive business website for a company specialising in office space design and customisation. The website showcases the company's services, completed projects, team expertise and customer testimonials, while encouraging visitors to request a quotation.
+
+## Course Information
+
+- **Program:** BSS Software Engineering Internship
+- **Phase:** Phase 2
+- **Project:** Project 4 - Yavin Website
+
+## Live Demo
+
+[**View the Project Website**](https://yavin-website-yw.vercel.app/)
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- Bootstrap 5
+- Sass (SCSS)
+- JavaScript
+- Font Awesome
 
 ## Features
 
-- Clean design with background images/patterns
-- Responsive design
-- Custom JavaScript for the stat counter
-- Nav scroll effect
-- Project area
-- Testimonial slider/carousel
-- Contact form
-- Inner article page
-- Font awesome icons
+- Responsive navigation bar with scroll-based styling.
+- Hero section introducing the company's office design services.
+- Animated statistics counters.
+- Introduction and company details sections.
+- Services section showcasing available solutions.
+- Additional details sections with images and content.
+- Quote request call-to-action section.
+- Project gallery displaying six completed projects.
+- Customer testimonial carousel.
+- Contact section with a message form.
+- Separate article details page.
+- Back-to-top button.
+- Responsive layout for different screen sizes.
 
-## Usage
+## Concepts Practised
 
-This website is built with [Bootstrap](https://getbootstrap.com/) and [Sass](https://sass-lang.com/). It uses [Font Awesome](https://fontawesome.com/) for icons.
+- Bootstrap grid system and responsive breakpoints.
+- Bootstrap navigation and utility classes.
+- Bootstrap carousel component.
+- Bootstrap forms and layout components.
+- Bootstrap Flexbox and positioning utilities.
+- JavaScript DOM manipulation and scroll event handling.
+- JavaScript counters using `setTimeout()`.
+- Implementing scroll-based navbar effects.
+- Creating a back-to-top interaction.
+- Sass variables, nesting and custom styling.
+- CSS transitions, background images and responsive media queries.
+- Structuring a multi-page website.
 
-In order to customize this website, you need to install [Node.js](https://nodejs.org/en/). Then, clone this repository and run:
+## Implementation Notes
 
-```bash
-npm install
-```
-
-This will install Bootstrap, Sass and Font Awesome. To build your CSS files from Sass, run:
-
-```bash
-npm run sass:build
-```
-
-To watch your Sass files for changes, run:
-
-```bash
-npm run sass:watch
-```
-
-You can add Bootstrap variables to the `bootstrap.scss` file. You can look at the file `node_modules/bootstrap/dist/scss/_variables.scss` for a list of all the variables. Do NOT edit the `variables.scss` file directly, as it will be overwritten when you update Bootstrap.
-
-To add your own custom styles, use the `styles.scss` file.
+The website is structured around the company's introduction, services, project portfolio, testimonials and contact sections. JavaScript is used to animate the statistics counters, apply styling changes to the navbar during scrolling and control the back-to-top button. The testimonial section uses a Bootstrap carousel to display customer feedback. An additional article page provides more detailed information about the company's services and approach.
