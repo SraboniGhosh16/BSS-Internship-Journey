@@ -26,15 +26,15 @@ This phase focuses on learning Bootstrap 5 and using its components, grid system
 | Mini-Project 1 - Pricing Card (Module 5) | Completed |
 | Mini-Project 2 - Ratings Component (Module 5) | Completed |
 | Mini-Project 3 - User List (Module 5) | Completed |
-| Module 7 - Course Project | In Progress |
-| Module 8 - Course Project | Not Started |
-| Module 9 - Course Project | Not Started |
-| Module 10 - Course Project | Not Started |
-| Module 11 - Course Project | Not Started |
-| Figma Conversion - Doctor House / E-commerce | Not Started |
+| Module 7 - Course Project | Completed |
+| Module 8 - Course Project | Completed |
+| Module 9 - Course Project | Completed |
+| Module 10 - Course Project | Completed |
+| Module 11 - Course Project | Completed |
+| Figma Conversion - E-commerce | Completed |
 
 ## Progress
 
 **Start Date:** 09/11/2026
 
-**Phase status:** In Progress
+**Phase status:** Completed
